@@ -1,0 +1,1015 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bet/Odds | Magazine</title>
+    <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/vnd.microsoft.icon">
+    
+    <link rel="stylesheet" href="./assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/carousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./assets/carousel/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./assets/slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="./assets/slick-1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" href="./stylesheets/screen.css">
+    <link rel="stylesheet" href="./stylesheets/responsive.css">
+    <link rel="stylesheet" href="./stylesheets/bet-odds.css">
+</head>
+<body>
+    <div id="page" class="page">
+        <span id="btn-close" onclick="hideMenu()"></span>
+        <div id="over" onclick="hideMenu()"></div>
+        
+        <div class="changeSkin">
+            <div class="container">
+                <a href="javascript:void(0)" class="skin-icon" onclick="showChangeSkin()">
+                    <i class="fa fa-cog"></i>
+                </a>
+                <div class="skin-color">
+                    <strong>Skin</strong>
+                    <ul>
+                        <li><a href="#" class="color-default">default</a></li>
+                    </ul>
+                </div>
+                <div class="layout">
+                    <strong>Layout Boxed</strong>
+                    <label for="">
+                        <span class="active">No</span>
+                        <span>Yes</span>
+                    </label>
+                </div>
+                <div class="direction">
+                    <strong>Direction</strong>
+                    <ul class="change-direction">
+                        <li class="active">
+                            <a href="#">LTR</a>
+                        </li>
+                        <li>
+                            <a href="#">RTL</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <!-- header -->
+        <header id="header">
+            <div class="container">
+                <nav class="row header-wrapper">
+                    <div class="col-lg-3 col-md-5 col-sm-6 header-logo-block">
+                        <div class="header-logo">
+                            <a href="index.html">
+                                <img src="./assets/images/logo.svg" alt="" class="header-logo-img img-fluid">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-9 col-md-7 col-sm-6 menubar-block">
+                        <ul class="primary-menu">
+                            <li class="primary-menu-item"><a href="index.html">HOME</a></li>
+                            <li class="primary-menu-item"><a href="blogs.html">BLOGS</a></li>
+                            <li class="primary-menu-item"><a href="gallery.html">GALLERY</a></li>
+                            <li class="primary-menu-item active"><a href="bet-odds.html">BED/ODDS</a></li>
+                            <li class="primary-menu-item"><a href="video.html">VIDEO</a></li>
+                            <li class="primary-menu-item"><a href="contact.html">CONTACT</a></li>
+                            <li class="primary-menu-item"><a href="livescore.html">LIVESCORE</a></li>
+                        </ul>
+                        <!-- MENU MOBILE -->
+                        <nav class="menu-mobile" scroll="no">
+                            <div class="container-fluid">
+                                <ul class="menu-mobile-list">
+                                    <li class="menu-mobile-item">
+                                        <a href="index.html">Home</a>
+                                    </li>
+                                    <li class="menu-mobile-item">
+                                        <a href="blogs.html">Blogs</a>
+                                    </li>
+                                    <li class="menu-mobile-item drop-menu">
+                                        <a href="gallery.html">Gallery</a>
+                                        <div class="submenu-mobile">
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Gallery(row)</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="menu-mobile-item active">
+                                        <a href="bet-odds.html">Bed/Odds</a>
+                                    </li>
+                                    <li class="menu-mobile-item">
+                                        <a href="video.html">Video</a>
+                                    </li>
+                                    <li class="menu-mobile-item">
+                                        <a href="contact.html">Contact</a>
+                                    </li>
+                                    <li class="menu-mobile-item">
+                                        <a href="livescore.html">Livescore</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                        <div class="d-flex iconbar-wrapper">
+                            <div class="header-menuicon d-flex justify-content-center align-items-center" onclick="openPrimaryMenu()">
+                                <a href="#">
+                                    <i class="fa fa-bars"></i>
+                                </a>
+                            </div>
+                            <div class="header-search d-flex justify-content-center align-items-center">
+                                <form class="search" action="blogs.html">
+                                    <label for="serch-input">
+                                        <input class=" search-input" id="search-input" type="text" placeholder="Keywords">
+                                    </label>
+                                    <label for="search-submit" class="submit-block">
+                                        <input class="search-submit" id="search-submit" type="submit">
+                                    </label>
+                                    <!-- <i class="fa fa-search"></i> -->
+                                </form>
+                            </div>
+                            <div class="header-login d-flex justify-content-center align-items-center">
+                                <a href="#" onclick="showHideLogin()">
+                                    <i class="fa fa-sign-in"></i>
+                                </a>
+                                <div id="login-block" class="login-block">
+                                    <div class="region-user-login">
+                                        <div class="content">
+                                            <form class="login-form" action="#">
+                                                <div class="form-group">
+                                                    <label class="form-required" for="login-username">Username</label>
+                                                    <input id="login-username" class="login-username" type="text">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="form-required" for="login-password">Password</label>
+                                                    <input id="login-password" class="login-password" type="text">
+                                                </div>
+                                                <div class="form-group">
+                                                    <input class="login-submit" type="submit" value="LOG IN">
+                                                </div>
+                                            </form>
+                                            <div class="login-options-list">
+                                                <ul>
+                                                    <li>
+                                                        <a href="#">Reset your password</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+        
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <!-- --- -->
+        <!-- SECTION SPORTS MENU -->
+        <section id="sports-menu">
+            <div class="container">
+                <nav class="sports-menu row">
+                    <a class=sports-menu-toggle href="#" onclick="openSportsMenu()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                    <ul class="d-flex flex-wrap sports-menu-list">
+                        <li class="sports-menu-item">
+                            <a href="#">Swimming</a>
+                        </li>
+                        <li class="sports-menu-item">
+                            <a class="drop" href="#">Tennis</a>
+                            <div class="sports-submenu">
+                                <ul class="">
+                                    <li class="sports-submenu-item">
+                                        <a href="#">Tennis Video</a>
+                                    </li>
+                                    <li class="sports-submenu-item">
+                                        <a href="#">WTA Schedule</a>
+                                    </li>
+                                    <li class="sports-submenu-item">
+                                        <a href="#">Tennis Photo</a>
+                                    </li>
+                                    <li class="sports-submenu-item">
+                                        <a href="#">Tennis News</a>
+                                    </li>
+                                    <li class="sports-submenu-item">
+                                        <a href="#">ATP Schedule</a>
+                                    </li>
+                                    <li class="sports-submenu-item">
+                                        <a href="#">Rankings</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="sports-menu-item">
+                            <a href="#">Sailing</a>
+                        </li>
+                        <li class="sports-menu-item">
+                            <a class="drop" href="#">Golf</a>
+                            <div class="sports-submenu">
+                                <ul class="">
+                                    <li class="sports-submenu-item">
+                                        <a href="#">European Tour</a>
+                                    </li>
+                                    <li class="sports-submenu-item">
+                                        <a href="#">Ryder Cup</a>
+                                    </li>
+                                    <li class="sports-submenu-item">
+                                        <a href="#">Open Championship</a>
+                                    </li>
+                                    <li class="sports-submenu-item">
+                                        <a href="#">US PGA Tour</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="sports-menu-item">
+                            <a class="drop" href="#">Football</a>
+                            <div class="sports-submenu">
+                                <ul class="">
+                                    <li class="sports-submenu-item">
+                                        <a href="#">Series A</a>
+                                    </li>
+                                    <li class="sports-submenu-item">
+                                        <a href="#">Ligue 1</a>
+                                    </li>
+                                    <li class="sports-submenu-item">
+                                        <a href="#">Premier League</a>
+                                    </li>
+                                    <li class="sports-submenu-item">
+                                        <a href="#">Scottish Premier</a>
+                                    </li>
+                                    <li class="sports-submenu-item">
+                                        <a href="#">League Two</a>
+                                    </li>
+                                    <li class="sports-submenu-item">
+                                        <a href="#">Live Fixtures</a>
+                                    </li>
+                                    <li class="sports-submenu-item">
+                                        <a href="#">League One</a>
+                                    </li>
+                                    <li class="sports-submenu-item">
+                                        <a href="#">Europa League</a>
+                                    </li>
+                                    <li class="sports-submenu-item">
+                                        <a href="#">Internationals</a>
+                                    </li>
+                                    <li class="sports-submenu-item">
+                                        <a href="#">Bundesliga</a>
+                                    </li>
+                                    <li class="sports-submenu-item">
+                                        <a href="#">Champions League</a>
+                                    </li>
+                                    <li class="sports-submenu-item">
+                                        <a href="#">La Liga</a>
+                                    </li>
+                                    <li class="sports-submenu-item">
+                                        <a href="#">Championship</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="sports-menu-item">
+                            <a href="#">Motorsport</a>
+                        </li>
+                        <li class="sports-menu-item">
+                            <a class="drop" href="#">Cricket</a>
+                            <div class="sports-submenu">
+                                <ul class="">
+                                    <li class="sports-submenu-item">
+                                        <a href="#">County Cricket</a>
+                                    </li>
+                                    <li class="sports-submenu-item">
+                                        <a href="#">Cricket AM</a>
+                                    </li>
+                                    <li class="sports-submenu-item">
+                                        <a href="#">Indian Premier League</a>
+                                    </li>
+                                    <li class="sports-submenu-item">
+                                        <a href="#">International Cricket</a>
+                                    </li>
+                                    <li class="sports-submenu-item">
+                                        <a href="#">Ashes</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="sports-menu-item">
+                            <a class="drop" href="#">Rugby Union</a>
+                            <div class="sports-submenu">
+                                <ul class="">
+                                    <li class="sports-submenu-item">
+                                        <a href="#">Aviva Premiership</a>
+                                    </li>
+                                    <li class="sports-submenu-item">
+                                        <a href="#">British and Irish Lions</a>
+                                    </li>
+                                    <li class="sports-submenu-item">
+                                        <a href="#">Rugby League News</a>
+                                    </li>
+                                    <li class="sports-submenu-item">
+                                        <a href="#">Heineken Cup</a>
+                                    </li>
+                                    <li class="sports-submenu-item">
+                                        <a href="#">Rugby Live on Sky</a>
+                                    </li>
+                                    <li class="sports-submenu-item">
+                                        <a href="#">Rugby Worldcup</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="sports-menu-item">
+                            <a href="#">Skiing</a>
+                        </li>
+                    </ul>
+                    <nav class="sports-menu-mobile">
+                        <div class="container-fluid">
+                            <ul class="sports-menu-mobile-list">
+                                <li class="sports-menu-mobile-item">
+                                    <a href="#">Swimming</a>
+                                </li>
+                                <li class="sports-menu-mobile-item drop-menu">
+                                    <a href="#">Tennis</a>
+                                </li>
+                                <li class="sports-menu-mobile-item">
+                                    <a href="#">Sailling</a>
+                                </li>
+                                <li class="sports-menu-mobile-item drop-menu">
+                                    <a href="#">Golf</a>
+                                </li>
+                                <li class="sports-menu-mobile-item drop-menu">
+                                    <a href="#">Football</a>
+                                </li>
+                                <li class="sports-menu-mobile-item">
+                                    <a href="#">Motorsport</a>
+                                </li>
+                                <li class="sports-menu-mobile-item drop-menu">
+                                    <a href="#">Cricket</a>
+                                </li>
+                                <li class="sports-menu-mobile-item drop-menu">
+                                    <a href="#">Rugby Union</a>
+                                </li>
+                                <li class="sports-menu-mobile-item">
+                                    <a href="#">Skiing</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </nav>
+            </div>
+        </section>
+        <!-- --- -->
+        <!-- SECTION BANNER -->
+        <section id="banner">
+            <div class="container">
+                <div class="region-banner">
+                    <div class="row">
+                        <img src="./assets/images/blogs/banner.jpg" class="img-fluid" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="bet-odds">
+            <div class="container">
+                <div class="region-bet-odds">
+                    <div class="row">
+                        <div class="odds-side-first col-lg-6 col-md-12 col-sm-12">
+                            <div class="region bet-odds-content">
+                                <div class="title">
+                                    <h1>Bet/Odds</h1>
+                                </div>
+                                <div class="content">
+                                    <div class="items">
+                                        <div class="item">
+                                            <div class="item-category">
+                                                <div class="item-category-content">
+                                                    <a href="#">
+                                                        Champions League
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="item-changed field-changed">
+                                                <span>Nov 01 18:08</span>
+                                            </div>
+                                            <div class="item-title">
+                                                <span>Man City vs Chelsea</span>
+                                            </div>
+                                            <div class="item-fieldset">
+                                                <div class="view-field field-draw">
+                                                    <span class="view-label">Draw</span>
+                                                    <div class="field-content">0.30</div>
+                                                </div>
+                                                <div class="view-field field-home">
+                                                    <span class="view-label">Home</span>
+                                                    <div class="field-content">0.20</div>
+                                                </div>
+                                                <div class="view-field field-away">
+                                                    <span class="view-label">Away</span>
+                                                    <div class="field-content">0.60</div>
+                                                </div>
+                                            </div>
+                                            <div class="item-body">
+                                                <p>
+                                                    Caecus facilisis gilvus gravis persto quibus refoveo valetudo vindico. Amet populus probo. Caecus neo nisl plaga turpis ymo. Adipiscing commodo
+                                                    secundum sino turpis. Abdo at enim loquor modo.
+                                                </p>
+                                            </div>
+                                            <div class="item-uid">
+                                                <span>
+                                                    <a href="#">admin</a>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="item">
+                                            <div class="item-category">
+                                                <div class="item-category-content">
+                                                    <a href="#">
+                                                        Aviva Premiership
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="item-changed field-changed">
+                                                <span>Nov 01 18:08</span>
+                                            </div>
+                                            <div class="item-title">
+                                                <span>Asenal vs MU</span>
+                                            </div>
+                                            <div class="item-fieldset">
+                                                <div class="view-field field-draw">
+                                                    <span class="view-label">Draw</span>
+                                                    <div class="field-content">0.40</div>
+                                                </div>
+                                                <div class="view-field field-home">
+                                                    <span class="view-label">Home</span>
+                                                    <div class="field-content">0.30</div>
+                                                </div>
+                                                <div class="view-field field-away">
+                                                    <span class="view-label">Away</span>
+                                                    <div class="field-content">0.30</div>
+                                                </div>
+                                            </div>
+                                            <div class="item-body">
+                                                <p>
+                                                    Esse imputo lenis. Causa cui dolore lucidus nunc obruo pneum quia saepius utinam. Abdo amet commodo feugiat meus obruo quae suscipit velit ymo.
+                                                    Adipiscing duis jus metuo occuro pala sed uxor…
+                                                </p>
+                                            </div>
+                                            <div class="item-uid">
+                                                <span>
+                                                    <a href="#">admin</a>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="item">
+                                            <div class="item-category">
+                                                <div class="item-category-content">
+                                                    <a href="#">
+                                                        Tennis Video
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="item-changed field-changed">
+                                                <span>Nov 02 09:19</span>
+                                            </div>
+                                            <div class="item-title">
+                                                <span>Man City vs Chelsea</span>
+                                            </div>
+                                            <div class="item-fieldset">
+                                                <div class="view-field field-draw">
+                                                    <span class="view-label">Draw</span>
+                                                    <div class="field-content">0.70</div>
+                                                </div>
+                                                <div class="view-field field-home">
+                                                    <span class="view-label">Home</span>
+                                                    <div class="field-content">0.10</div>
+                                                </div>
+                                                <div class="view-field field-away">
+                                                    <span class="view-label">Away</span>
+                                                    <div class="field-content">0.20</div>
+                                                </div>
+                                            </div>
+                                            <div class="item-body">
+                                                <p>
+                                                    Iaceo iriure nimis nulla paratus pertineo ullamcorper. Consequat cui mauris metuo mos sagaciter saluto turpis. Augue cogo haero minim suscipere vindico
+                                                    virtus ymo. Consequat dignissim facilisis…
+                                                </p>
+                                            </div>
+                                            <div class="item-uid">
+                                                <span>
+                                                    <a href="#">admin</a>
+                                                </span>
+                                            </div>
+                                        </div>
+    
+                                        <div class="item">
+                                            <div class="item-category">
+                                                <div class="item-category-content">
+                                                    <a href="#">
+                                                        Tennis Video
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="item-changed field-changed">
+                                                <span>Nov 01 18:08</span>
+                                            </div>
+                                            <div class="item-title">
+                                                <span>Man City vs Chelsea</span>
+                                            </div>
+                                            <div class="item-fieldset">
+                                                <div class="view-field field-draw">
+                                                    <span class="view-label">Draw</span>
+                                                    <div class="field-content">0.40</div>
+                                                </div>
+                                                <div class="view-field field-home">
+                                                    <span class="view-label">Home</span>
+                                                    <div class="field-content">0.30</div>
+                                                </div>
+                                                <div class="view-field field-away">
+                                                    <span class="view-label">Away</span>
+                                                    <div class="field-content">0.30</div>
+                                                </div>
+                                            </div>
+                                            <div class="item-body">
+                                                <p>
+                                                    Caecus consectetuer eros euismod importunus praesent qui sino. Acsi hos mos quibus.
+                                                    
+                                                    Augue consectetuer ex mos nobis obruo. Appellatio imputo natu pecus quae sino. Adipiscing dignissim esse…
+                                                </p>
+                                            </div>
+                                            <div class="item-uid">
+                                                <span>
+                                                    <a href="#">admin</a>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="item-category">
+                                                <div class="item-category-content">
+                                                    <a href="#">
+                                                        Ryder Cup
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="item-changed field-changed">
+                                                <span>Nov 01 18:08</span>
+                                            </div>
+                                            <div class="item-title">
+                                                <span>Man City vs Chelsea</span>
+                                            </div>
+                                            <div class="item-fieldset">
+                                                <div class="view-field field-draw">
+                                                    <span class="view-label">Draw</span>
+                                                    <div class="field-content">0.40</div>
+                                                </div>
+                                                <div class="view-field field-home">
+                                                    <span class="view-label">Home</span>
+                                                    <div class="field-content">0.30</div>
+                                                </div>
+                                                <div class="view-field field-away">
+                                                    <span class="view-label">Away</span>
+                                                    <div class="field-content">0.30</div>
+                                                </div>
+                                            </div>
+                                            <div class="item-body">
+                                                <p>
+                                                    Caecus euismod immitto nobis vulputate. Commoveo nutus pala premo usitas. Abdo pneum tincidunt. Feugiat jus lenis letalis macto magna sed tego. Acsi
+                                                    appellatio aptent conventio eligo erat incassum…
+                                                </p>
+                                            </div>
+                                            <div class="item-uid">
+                                                <span>
+                                                    <a href="#">admin</a>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <nav class="pager">
+                                        <ul class="pager-items">
+                                            <li class="pager-item d-none">
+                                                <a href="#">« First</a>
+                                            </li>
+                                            <li class="pager-item d-none">
+                                                <a href="#">‹ Previous</a>
+                                            </li>
+                                            <li class="pager-item active">
+                                                <a href="#">1</a>
+                                            </li>
+                                            <li class="pager-item">
+                                                <a href="#">2</a>
+                                            </li>
+                                            <li class="pager-item">
+                                                <a href="#">Next ›</a>
+                                            </li>
+                                            <li class="pager-item">
+                                                <a href="#">Last »</a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="odds-side-second col-lg-3 col-md-6 col-sm-6">
+                            <div class="region">
+                                <nav>
+                                    <ul>
+                                        <li class="bet-item">
+                                            <a href="#">
+                                                <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                                                <span>Aviva Premiership</span>
+                                            </a>
+                                        </li>
+                                        <li class="bet-item">
+                                            <a href="#">
+                                                <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                                                <span>British and Irish lions</span>
+                                            </a>
+                                        </li>
+                                        <li class="bet-item">
+                                            <a href="#">
+                                                <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                                                <span>Champions League</span>
+                                            </a>
+                                        </li>
+                                        <li class="bet-item">
+                                            <a href="#">
+                                                <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                                                <span>County Cricket</span>
+                                            </a>
+                                        </li>
+                                        <li class="bet-item">
+                                            <a href="#">
+                                                <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                                                <span>Rugby Live on Sky</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="odds-side-third col-lg-3 col-md-6 col-sm-6">
+                            <div class="region">
+                                <div class="match">
+                                    <h2>
+                                        <span>MATCH OF THE DAY</span>
+                                    </h2>
+                                    <div class="content">
+                                        <div class="match-list">
+                                            <div class="match-item">
+                                                <div class="match-title">
+                                                    <span>
+                                                        <a href="#">Man City vs Chelsea</a>
+                                                    </span>
+                                                </div>
+                                                <div class="match-changed field-changed">
+                                                    <span>
+                                                        18:08 Nov 01
+                                                    </span>
+                                                </div>
+                                                <div class="match-body">
+                                                    <p>
+                                                        Caecus facilisis gilvus gravis persto quibus refoveo valetudo vindico. Amet populus probo. Caecus neo nisl plaga turpis ymo. Adipiscing commodo
+                                                        secundum sino turpis. Abdo at enim loquor modo.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="match-item">
+                                                <div class="match-title">
+                                                    <span>
+                                                        <a href="#">Asenal vs MU</a>
+                                                    </span>
+                                                </div>
+                                                <div class="match-changed field-changed">
+                                                    <span>
+                                                        18:08 Nov 01
+                                                    </span>
+                                                </div>
+                                                <div class="match-body">
+                                                    <p>
+                                                        Esse imputo lenis. Causa cui dolore lucidus nunc obruo pneum quia saepius utinam. Abdo amet commodo feugiat meus obruo quae suscipit velit ymo.
+                                                        Adipiscing duis jus metuo occuro pala sed uxor…
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="table">
+                                    <table class="result-table-premierLeague">
+                                        <thead>
+                                            <tr class="result-table-title">
+                                                <th>Premier League</th>
+                                                <th>W</th>
+                                                <th>D</th>
+                                                <th>L</th>
+                                                <th>Pts</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr class="result-table-body">
+                                                <td class="result-table-club">
+                                                    <a href="#">Manchester City</a>
+                                                </td>
+                                                <td class="result-table-win">26</td>
+                                                <td class="result-table-draw">5</td>
+                                                <td class="result-table-lose">6</td>
+                                                <td class="result-table-points">83</td>
+                                            </tr>
+                                            <tr class="result-table-body">
+                                                <td class="result-table-club">
+                                                    <a href="#">Liverpool</a>
+                                                </td>
+                                                <td class="result-table-win">25</td>
+                                                <td class="result-table-draw">6</td>
+                                                <td class="result-table-lose">6</td>
+                                                <td class="result-table-points">81</td>
+                                            </tr>
+                                            <tr class="result-table-body">
+                                                <td class="result-table-club">
+                                                    <a href="#">Chelsea</a>
+                                                </td>
+                                                <td class="result-table-win">24</td>
+                                                <td class="result-table-draw">7</td>
+                                                <td class="result-table-lose">6</td>
+                                                <td class="result-table-points">79</td>
+                                            </tr>
+                                            <tr class="result-table-body">
+                                                <td class="result-table-club">
+                                                    <a href="#">Arsernal</a>
+                                                </td>
+                                                <td class="result-table-win">23</td>
+                                                <td class="result-table-draw">7</td>
+                                                <td class="result-table-lose">7</td>
+                                                <td class="result-table-points">76</td>
+                                            </tr>
+                                            <tr class="result-table-body">
+                                                <td class="result-table-club">
+                                                    <a href="#">Everton</a>
+                                                </td>
+                                                <td class="result-table-win">20</td>
+                                                <td class="result-table-draw">9</td>
+                                                <td class="result-table-lose">8</td>
+                                                <td class="result-table-points">69</td>
+                                            </tr>
+                                            <tr class="result-table-body">
+                                                <td class="result-table-club">
+                                                    <a href="#">Tottenham Hotspur</a>
+                                                </td>
+                                                <td class="result-table-win">20</td>
+                                                <td class="result-table-draw">6</td>
+                                                <td class="result-table-lose">11</td>
+                                                <td class="result-table-points">66</td>
+                                            </tr>
+                                            <tr class="result-table-body">
+                                                <td class="result-table-club">
+                                                    <a href="#">Manchester United</a>
+                                                </td>
+                                                <td class="result-table-win">19</td>
+                                                <td class="result-table-draw">6</td>
+                                                <td class="result-table-lose">12</td>
+                                                <td class="result-table-points">63</td>
+                                            </tr>
+                                            <tr class="result-table-body">
+                                                <td class="result-table-club">
+                                                    <a href="#">Southampton</a>
+                                                </td>
+                                                <td class="result-table-win">15</td>
+                                                <td class="result-table-draw">10</td>
+                                                <td class="result-table-lose">12</td>
+                                                <td class="result-table-points">55</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="panel-fifth">
+            <div class="container">
+                <div class="region-panel-fifth row">
+                    <div class="col-md-2 col-sm-12">
+                        <div class="region region-panel-fifth-1">
+                            <h2>
+                                <span>Football</span>
+                            </h2>
+                            <div class="content">
+                                <ul>
+                                    <li>
+                                        <a href="#">Series A</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Ligue 1</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Premier League</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Scottish Premier</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">League Two</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Live Fixtures</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">League One</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Internationals</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Champions League</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">La Liga</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-12">
+                        <div class="region region-panel-fifth-2">
+                            <h2>
+                                <span>Rugby Union</span>
+                            </h2>
+                            <ul>
+                                <li>
+                                    <a href="#">Aviva Premiership</a>
+                                </li>
+                                <li>
+                                    <a href="#">Rugby League News</a>
+                                </li>
+                                <li>
+                                    <a href="#">Rugby Live on Sky</a>
+                                </li>
+                            </ul>
+                            <h2>
+                                <span>Cricket</span>
+                            </h2>
+                            <ul>
+                                <li>
+                                    <a href="#">County Cricket</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-12">
+                        <div class="region region-panel-fifth-3">
+                            <h2>
+                                <span>Golf</span>
+                            </h2>
+                            <ul>
+                                <li>
+                                    <a href="#">European Tour</a>
+                                </li>
+                                <li>
+                                    <a href="#">Ryder Cup</a>
+                                </li>
+                                <li>
+                                    <a href="#">US PGA Tour</a>
+                                </li>
+                            </ul>
+                            <h2>
+                                <span>Tennis</span>
+                            </h2>
+                            <ul>
+                                <li>
+                                    <a href="#">Tennis Video</a>
+                                </li>
+                                <li>
+                                    <a href="#">WTA Schedule</a>
+                                </li>
+                                <li>
+                                    <a href="#">Tennis Photo</a>
+                                </li>
+                                <li>
+                                    <a href="#">Tenis News</a>
+                                </li>
+                                <li>
+                                    <a href="#">Rankings</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-12">
+                        <div class="region region-panel-fifth-4">
+                            <h2>
+                                <span>More Sports</span>
+                            </h2>
+                            <ul>
+                                <li>
+                                    <a href="#">Boxing</a>
+                                </li>
+                                <li>
+                                    <a href="#">Horce Racing</a>
+                                </li>
+                                <li>
+                                    <a href="#">Cycling</a>
+                                </li>
+                                <li>
+                                    <a href="#">Snooker</a>
+                                </li>
+                                <li>
+                                    <a href="#">Darts</a>
+                                </li>
+                                <li>
+                                    <a href="#">NFL</a>
+                                </li>
+                                <li>
+                                    <a href="#">Speedway</a>
+                                </li>
+                                <li>
+                                    <a href="#">Motor Sport</a>
+                                </li>
+                                <li>
+                                    <a href="#">WWE</a>
+                                </li>
+                                <li>
+                                    <a href="#">Olympics</a>
+                                </li>
+                                <li>
+                                    <a href="#">Sports Calendar</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12">
+                        <div class="region region-panel-fifth-5">
+                            <h2>
+                                <span>BBC Tweets</span>
+                            </h2>
+                            <div class="connect">
+                                <p>Or connect with us</p>
+                                <ul class="social-list">
+                                    <li>
+                                        <a class="fa fa-facebook" href="#">
+                                            <span>Facebook</span>
+                                        </a>
+                                        </i>
+                                    <li>
+                                        <a class="fa fa-twitter" href="#">
+                                            <span>Twitter</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="fa fa-google-plus" href="#">
+                                            <span>Google</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer id="footer">
+            <div class="container">
+                <div class="region-footer row">
+                    <div class="col-md-6 col-sm-12 copyright">
+                        <p>Copyright © 2014 Sport Magazine. All Rights Reserved. Designed by <a href="#">WeebPal</a>. Powered by <a href="#">Drupal</a></p>
+                    </div>
+                    <div class="col-md-6 col-sm-12 menu-footer">
+                        <ul>
+                            <li>
+                                <a href="#">Home</a>
+                            </li>
+                            <li>
+                                <a href="#">About Us</a>
+                            </li>
+                            <li>
+                                <a href="#">FAQ</a>
+                            </li>
+                            <li>
+                                <a href="#">Privacy Policy</a>
+                            </li>
+                            <li>
+                                <a href="#">Terms & Conditions</a>
+                            </li>
+                            <li>
+                                <a href="#">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <a href="#top" class="btn-btt">
+        </a>
+    </div>
+
+    <script src="./assets/jquery-slim/jquery.slim.min.js"></script>
+    <script src="./assets/popper-js/popper.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="./assets/carousel/owl.carousel.min.js"></script>
+    <script src="./assets/slick-1.8.1/slick/slick.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>

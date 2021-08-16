@@ -1,0 +1,88 @@
+@import "fonts";
+
+#video {
+  position: relative;
+  // z-index: 10;
+  .container {
+    background: #fff;
+    padding-top: 30px;
+    // padding-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .region-video {
+    .title {
+      h1 {
+        font-family: titillium;
+        font-weight: 400;
+        line-height: 1.2;
+        margin: 0 0 30px;
+        font-size: 36px;
+      }
+    }
+    .content {
+      .video-item {
+        margin-bottom: 30px;
+      }
+      .video-item:hover {
+        .video a::before {
+          opacity: 0;
+          // display: none;
+        }
+        .video-title {
+          opacity: 0;
+          // display: none;
+        }
+      }
+      .video {
+        a::before {
+          content: "\f04b";
+          background: #dd453a;
+          color: #fff;
+          border-radius: 8px;
+          display: inline-block;
+
+          font-family: fontawesome;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 1.21429em;
+
+          height: 35px;
+          width: 50px;
+          text-align: center;
+          line-height: 2;
+
+          margin-left: -25px;
+          margin-top: -17px;
+          padding-left: 5px;
+
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          z-index: 2;
+        }
+      }
+      .video-title {
+        background-color: #000;
+        margin-bottom: 0;
+        padding: 15px;
+        position: absolute;
+        bottom: 0;
+        left: 15px;
+        right: 15px;
+        // top: 55%;
+        min-height: 70px;
+        line-height: 18px;
+        transition: all 0.3s ease;
+        z-index: 1;
+        a {
+          color: #fff;
+          font-family: oregon;
+        }
+      }
+      .video-title:hover {
+        background-color: #eb6a14;
+      }
+    }
+  }
+}

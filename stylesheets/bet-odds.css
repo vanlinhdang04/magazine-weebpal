@@ -1,0 +1,369 @@
+@font-face {
+  font-family: opensans;
+  src: url(../assets/fonts/opensans-regular-webfont.woff2);
+}
+@font-face {
+  font-family: oregon;
+  src: url(../assets/fonts/oregon_ldo-webfont.woff);
+}
+@font-face {
+  font-family: fontAwesome;
+  src: url(../assets/fonts/fontawesome-webfont.woff2);
+}
+@font-face {
+  font-family: titillium;
+  src: url(../assets/fonts/titillium-regular-webfont.woff);
+}
+@font-face {
+  font-family: rotobo;
+  src: url(../assets/fonts/rotobo_font.woff2);
+}
+/* line 3, ../sass/bet-odds.scss */
+#bet-odds {
+  position: relative;
+}
+/* line 6, ../sass/bet-odds.scss */
+#bet-odds .container {
+  background: #fff;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+/* line 13, ../sass/bet-odds.scss */
+#bet-odds .field-changed {
+  color: #777777;
+  font-weight: 700;
+  display: block;
+  padding: 10px 0;
+  text-align: center;
+}
+/* line 21, ../sass/bet-odds.scss */
+#bet-odds .bet-odds-content .title h1 {
+  font-family: titillium;
+  font-weight: 400;
+  line-height: 1.2;
+  margin: 0 0 30px;
+  font-size: 36px;
+  line-height: 43px;
+}
+/* line 29, ../sass/bet-odds.scss */
+#bet-odds .bet-odds-content .content {
+  padding-bottom: 20px;
+}
+/* line 31, ../sass/bet-odds.scss */
+#bet-odds .bet-odds-content .content .item:not(:first-child) {
+  border-top: 1px solid #dedede;
+  margin-top: 40px;
+}
+/* line 35, ../sass/bet-odds.scss */
+#bet-odds .bet-odds-content .content .item-category {
+  border-bottom: 1px solid #dedede;
+  display: block;
+  padding: 10px 0;
+  font-family: titillium;
+  font-weight: 700;
+  line-height: 20px;
+}
+/* line 42, ../sass/bet-odds.scss */
+#bet-odds .bet-odds-content .content .item-category a {
+  color: #eb6a14;
+}
+/* line 45, ../sass/bet-odds.scss */
+#bet-odds .bet-odds-content .content .item-category a:hover {
+  color: #2caaa6;
+}
+/* line 49, ../sass/bet-odds.scss */
+#bet-odds .bet-odds-content .content .item-changed {
+  float: right;
+  margin-top: -39px;
+  overflow: hidden;
+  font-size: 12px;
+  line-height: 17px;
+}
+/* line 56, ../sass/bet-odds.scss */
+#bet-odds .bet-odds-content .content .item-title {
+  font-size: 2.14286em;
+  text-align: center;
+  padding: 10px 0;
+  font-family: oregon;
+  line-height: 43px;
+}
+/* line 63, ../sass/bet-odds.scss */
+#bet-odds .bet-odds-content .content .item-fieldset {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+/* line 68, ../sass/bet-odds.scss */
+#bet-odds .bet-odds-content .content .item-fieldset .view-field {
+  text-align: center;
+  display: inline-block;
+  padding: 0 10px;
+}
+/* line 73, ../sass/bet-odds.scss */
+#bet-odds .bet-odds-content .content .item-fieldset .view-label {
+  color: #121212;
+  display: block;
+  margin-bottom: 3px;
+  text-transform: uppercase;
+  line-height: 20px;
+}
+/* line 80, ../sass/bet-odds.scss */
+#bet-odds .bet-odds-content .content .item-fieldset .field-content {
+  background-color: #eb6a14;
+  color: #fff;
+  font-size: 1.14286em;
+  font-weight: 700;
+  line-height: 23px;
+  padding: 5px 10px;
+}
+/* line 89, ../sass/bet-odds.scss */
+#bet-odds .bet-odds-content .content .item-body {
+  line-height: 20px;
+  margin-bottom: 15px;
+}
+/* line 93, ../sass/bet-odds.scss */
+#bet-odds .bet-odds-content .content .item-uid {
+  line-height: 20px;
+}
+/* line 95, ../sass/bet-odds.scss */
+#bet-odds .bet-odds-content .content .item-uid a {
+  color: #000;
+}
+/* line 98, ../sass/bet-odds.scss */
+#bet-odds .bet-odds-content .content .item-uid a:hover {
+  color: #eb6a14;
+}
+/* line 102, ../sass/bet-odds.scss */
+#bet-odds .bet-odds-content .content .pager {
+  border-top: 1px solid #dedede;
+  font-size: 0.92857em;
+  margin: 15px 15px 10px 15px;
+  padding-top: 25px;
+  text-align: right;
+  width: 100%;
+}
+/* line 110, ../sass/bet-odds.scss */
+#bet-odds .bet-odds-content .content .pager-items {
+  display: block;
+  padding-left: 0;
+}
+/* line 114, ../sass/bet-odds.scss */
+#bet-odds .bet-odds-content .content .pager-items .pager-item {
+  display: inline-block;
+  font-family: "Open Sans";
+  margin-bottom: 10px;
+  margin-left: 0;
+  padding: 0;
+  text-align: center;
+}
+/* line 121, ../sass/bet-odds.scss */
+#bet-odds .bet-odds-content .content .pager-items .pager-item a {
+  border: 1px solid #ddd;
+  background-color: #fff;
+  border-color: #e4dfdf;
+  border-radius: 0;
+  color: #333333;
+  padding: 3px 10px;
+}
+/* line 129, ../sass/bet-odds.scss */
+#bet-odds .bet-odds-content .content .pager-items .pager-item a:hover {
+  border: 1px solid #2caaa6;
+  color: #2caaa6;
+}
+/* line 134, ../sass/bet-odds.scss */
+#bet-odds .bet-odds-content .content .pager-items .active {
+  font-weight: bold;
+}
+/* line 136, ../sass/bet-odds.scss */
+#bet-odds .bet-odds-content .content .pager-items .active a {
+  border: 1px solid #2caaa6;
+  color: #2caaa6;
+}
+/* line 144, ../sass/bet-odds.scss */
+#bet-odds .bet-menu {
+  background-color: #eb6a14;
+}
+/* line 147, ../sass/bet-odds.scss */
+#bet-odds .bet-item {
+  border-bottom: 1px solid #dedede;
+}
+/* line 149, ../sass/bet-odds.scss */
+#bet-odds .bet-item i {
+  font-size: 10px;
+  color: #7c7c7c;
+  margin-right: 10px;
+  opacity: 0.8;
+}
+/* line 155, ../sass/bet-odds.scss */
+#bet-odds .bet-item a {
+  display: block;
+  color: #121212;
+  padding: 15px 10px 15px 0px;
+  position: relative;
+  line-height: 20px;
+}
+/* line 162, ../sass/bet-odds.scss */
+#bet-odds .bet-item a:hover {
+  color: #eb6a14;
+}
+/* line 164, ../sass/bet-odds.scss */
+#bet-odds .bet-item a:hover i {
+  color: #eb6a14;
+}
+/* line 170, ../sass/bet-odds.scss */
+#bet-odds .match {
+  border: 5px solid #eb6a14;
+  margin-top: 10px;
+  padding: 0 30px 30px;
+  text-align: center;
+}
+/* line 176, ../sass/bet-odds.scss */
+#bet-odds .match h2 {
+  margin-bottom: 70px;
+  margin-top: -15px;
+  padding-left: 0;
+  position: relative;
+  width: 100%;
+  background-color: #eb6a14;
+  border: none;
+  color: #fff;
+  line-height: 1;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.71429em;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+/* line 192, ../sass/bet-odds.scss */
+#bet-odds .match h2 span {
+  display: block;
+  color: #fff;
+  margin-top: 0;
+  padding: 20px 29px 0;
+}
+/* line 199, ../sass/bet-odds.scss */
+#bet-odds .match h2::before {
+  border-color: #eb6a14 transparent;
+  border-style: solid solid none;
+  border-width: 30px 92px 0;
+  bottom: -30px;
+  content: "";
+  display: inline-block;
+  height: 0;
+  left: 50%;
+  margin-left: -90px;
+  position: absolute;
+  width: 0;
+}
+/* line 212, ../sass/bet-odds.scss */
+#bet-odds .match .match-title {
+  font-family: oregon;
+  font-size: 1.28571em;
+  line-height: 26px;
+  text-align: center;
+  padding: 10px 0;
+}
+/* line 218, ../sass/bet-odds.scss */
+#bet-odds .match .match-title a {
+  color: #121212;
+}
+/* line 221, ../sass/bet-odds.scss */
+#bet-odds .match .match-title a:hover {
+  color: #eb6a14;
+}
+/* line 225, ../sass/bet-odds.scss */
+#bet-odds .match .match-changed {
+  border-bottom: 1px solid #dedede;
+  border-top: 1px solid #dedede;
+  margin-bottom: 15px;
+  font-size: 12px;
+  line-height: 17px;
+}
+/* line 231, ../sass/bet-odds.scss */
+#bet-odds .match .match-changed span {
+  display: inline-block;
+  max-width: 50px;
+}
+/* line 236, ../sass/bet-odds.scss */
+#bet-odds .match .match-body {
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+/* line 240, ../sass/bet-odds.scss */
+#bet-odds .match .match-item:not(:first-child) {
+  border-top: 1px solid #dedede;
+  margin-top: 40px;
+}
+/* line 246, ../sass/bet-odds.scss */
+#bet-odds .table {
+  border-top: 1px solid #dedede;
+  margin-top: 30px;
+  padding-top: 30px;
+  margin-bottom: 0;
+}
+/* line 252, ../sass/bet-odds.scss */
+#bet-odds .result-table-premierLeague {
+  background: #2caaa6;
+  color: #fff;
+  width: 100%;
+}
+/* line 257, ../sass/bet-odds.scss */
+#bet-odds .result-table-title th:first-child {
+  font-family: oregon;
+  font-size: 1.14286em;
+  font-weight: 500;
+  text-align: right;
+  padding: 16px 5px;
+  border-bottom: medium none;
+}
+/* line 266, ../sass/bet-odds.scss */
+#bet-odds .result-table-title th {
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: right;
+  padding: 16px 5px;
+  border-bottom: medium none;
+}
+/* line 276, ../sass/bet-odds.scss */
+#bet-odds .result-table-title th:first-child,
+#bet-odds .result-table-body td:first-child {
+  padding-left: 10px;
+  text-align: left;
+}
+/* line 281, ../sass/bet-odds.scss */
+#bet-odds .result-table-title th:last-child {
+  text-align: left;
+  padding-right: 10px;
+}
+/* line 285, ../sass/bet-odds.scss */
+#bet-odds .result-table-premierLeague tbody tr:nth-child(odd) {
+  background: #56bbb8;
+}
+/* line 288, ../sass/bet-odds.scss */
+#bet-odds .result-table-premierLeague tbody tr td {
+  text-align: right;
+  padding: 5px 5px;
+  font-weight: 300;
+  line-height: 20px;
+}
+/* line 294, ../sass/bet-odds.scss */
+#bet-odds .result-table-body td:first-child a {
+  font-family: oregon;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 20px;
+  color: #fff;
+}
+/* line 301, ../sass/bet-odds.scss */
+#bet-odds .result-table-premierLeague tbody tr td:last-child {
+  text-align: left;
+}
+/* line 304, ../sass/bet-odds.scss */
+#bet-odds .result-table-premierLeague .result-table-club:hover a {
+  color: #121212;
+  text-decoration: none;
+}

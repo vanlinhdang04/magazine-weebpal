@@ -1,0 +1,147 @@
+@font-face {
+  font-family: opensans;
+  src: url(../assets/fonts/opensans-regular-webfont.woff2);
+}
+@font-face {
+  font-family: oregon;
+  src: url(../assets/fonts/oregon_ldo-webfont.woff);
+}
+@font-face {
+  font-family: fontAwesome;
+  src: url(../assets/fonts/fontawesome-webfont.woff2);
+}
+@font-face {
+  font-family: titillium;
+  src: url(../assets/fonts/titillium-regular-webfont.woff);
+}
+@font-face {
+  font-family: rotobo;
+  src: url(../assets/fonts/rotobo_font.woff2);
+}
+/* line 2, ../sass/contact.scss */
+#contact {
+  position: relative;
+}
+/* line 5, ../sass/contact.scss */
+#contact .container {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background: #fff;
+}
+/* line 13, ../sass/contact.scss */
+#contact .title h1 {
+  font-family: titillium;
+  font-weight: 400;
+  line-height: 1.2;
+  margin: 0 0 30px;
+  font-size: 36px;
+}
+/* line 22, ../sass/contact.scss */
+#contact .contact-infor h3 {
+  font-family: titillium;
+  font-weight: 400;
+  line-height: 1.2;
+  margin: 0 0 30px;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+/* line 30, ../sass/contact.scss */
+#contact .contact-infor p {
+  margin-bottom: 15px;
+  line-height: 20px;
+}
+/* line 34, ../sass/contact.scss */
+#contact .contact-infor ul {
+  margin-bottom: 15px;
+  list-style-type: disc;
+  padding-inline-start: 40px;
+  line-height: 20px;
+}
+/* line 39, ../sass/contact.scss */
+#contact .contact-infor ul li {
+  display: list-item;
+}
+/* line 41, ../sass/contact.scss */
+#contact .contact-infor ul li strong {
+  font-weight: 700;
+  background-color: none;
+}
+/* line 45, ../sass/contact.scss */
+#contact .contact-infor ul li a {
+  text-decoration: none;
+  color: #121212;
+}
+/* line 49, ../sass/contact.scss */
+#contact .contact-infor ul li a:hover {
+  color: #eb6a14;
+}
+/* line 57, ../sass/contact.scss */
+#contact .contact-input .content form div {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+/* line 61, ../sass/contact.scss */
+#contact .contact-input .content .label-required {
+  font-weight: 100;
+  line-height: 20px;
+  margin-bottom: 5px;
+}
+/* line 66, ../sass/contact.scss */
+#contact .contact-input .content .label-required::after {
+  content: "";
+  vertical-align: super;
+  display: inline-block;
+  background-image: url(../assets/images/contact/required.svg);
+  background-repeat: no-repeat;
+  background-size: 6px 6px;
+  width: 6px;
+  height: 6px;
+  margin: 0 0.3em;
+}
+/* line 77, ../sass/contact.scss */
+#contact .contact-input .content input {
+  height: 30px;
+  border-radius: 0;
+}
+/* line 81, ../sass/contact.scss */
+#contact .contact-input .content textarea {
+  border-radius: 0;
+}
+/* line 84, ../sass/contact.scss */
+#contact .contact-input .content input:focus,
+#contact .contact-input .content textarea:focus {
+  border: 2px solid #000;
+  box-shadow: none;
+  border-radius: 3px;
+}
+/* line 90, ../sass/contact.scss */
+#contact .contact-input .content .btn-style {
+  border-radius: 0;
+  padding: 2px 10px;
+  font-size: 14px;
+  font-weight: 100;
+  text-transform: uppercase;
+  line-height: 14px;
+}
+/* line 99, ../sass/contact.scss */
+#contact .contact-input .content .btn-style:first-child {
+  margin-right: 10px;
+}
+/* line 102, ../sass/contact.scss */
+#contact .contact-input .content .btn-style:hover {
+  opacity: 0.7;
+}
+/* line 105, ../sass/contact.scss */
+#contact .contact-input .content .btn-send {
+  color: #fff;
+  background-color: #2caaa6;
+  border-color: #2caaa6;
+}
+/* line 110, ../sass/contact.scss */
+#contact .contact-input .content .btn-preview {
+  color: #fff;
+  background-color: #777777;
+  border: none;
+}

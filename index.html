@@ -1,0 +1,1870 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Magazine</title>
+    <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/vnd.microsoft.icon">
+
+    <link rel="stylesheet" href="./assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/carousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./assets/carousel/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./assets/slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="./assets/slick-1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" href="./stylesheets/screen.css">
+    <link rel="stylesheet" href="./stylesheets/responsive.css">
+</head>
+<body>
+    <div id="page" class="page">
+        <span id="btn-close" onclick="hideMenu()"></span>
+        <div id="over" onclick="hideMenu()"></div>
+
+        <div class="changeSkin">
+            <div class="container">
+                <a href="javascript:void(0)" class="skin-icon" onclick="showChangeSkin()">
+                    <i class="fa fa-cog"></i>
+                </a>
+                <div class="skin-color">
+                    <strong>Skin</strong>
+                    <ul>
+                        <li><a href="#" class="color-default">default</a></li>
+                    </ul>
+                </div>
+                <div class="layout">
+                    <strong>Layout Boxed</strong>
+                    <label for="">
+                        <span class="active">No</span>
+                        <span>Yes</span>
+                    </label>
+                </div>
+                <div class="direction">
+                    <strong>Direction</strong>
+                    <ul class="change-direction">
+                        <li class="active">
+                            <a href="#">LTR</a>
+                        </li>
+                        <li>
+                            <a href="#">RTL</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- HEADER -->
+        <header id="header">
+            <div class="container">
+                <nav class="row header-wrapper">
+                    <div class="col-lg-3 col-md-5 col-sm-6 header-logo-block">
+                        <div class="header-logo">
+                            <a href="index.html">
+                                <img src="./assets/images/logo.svg" alt="" class="header-logo-img img-fluid">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-9 col-md-7 col-sm-6 menubar-block">
+                        <ul class="primary-menu">
+                            <li class="primary-menu-item active"><a href="index.html">HOME</a></li>
+                            <li class="primary-menu-item"><a href="blogs.html">BLOGS</a></li>
+                            <li class="primary-menu-item"><a href="gallery.html">GALLERY</a></li>
+                            <li class="primary-menu-item"><a href="bet-odds.html">BED/ODDS</a></li>
+                            <li class="primary-menu-item"><a href="video.html">VIDEO</a></li>
+                            <li class="primary-menu-item"><a href="contact.html">CONTACT</a></li>
+                            <li class="primary-menu-item"><a href="livescore.html">LIVESCORE</a></li>
+                        </ul>
+                        <!-- MENU MOBILE -->
+                        <nav class="menu-mobile" scroll="no">
+                            <div class="container-fluid">
+                                <ul class="menu-mobile-list">
+                                    <li class="menu-mobile-item active">
+                                        <a href="index.html">Home</a>
+                                    </li>
+                                    <li class="menu-mobile-item">
+                                        <a href="blogs.html">Blogs</a>
+                                    </li>
+                                    <li class="menu-mobile-item drop-menu">
+                                        <a href="gallery.html">Gallery</a>
+                                        <div class="submenu-mobile">
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Gallery(row)</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="menu-mobile-item">
+                                        <a href="bet-odds.html">Bed/Odds</a>
+                                    </li>
+                                    <li class="menu-mobile-item">
+                                        <a href="video.html">Video</a>
+                                    </li>
+                                    <li class="menu-mobile-item">
+                                        <a href="contact.html">Contact</a>
+                                    </li>
+                                    <li class="menu-mobile-item">
+                                        <a href="livescore.html">Livescore</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                        <div class="d-flex iconbar-wrapper">
+                            <div class="header-menuicon d-flex justify-content-center align-items-center" onclick="openPrimaryMenu()">
+                                <a href="#">
+                                    <i class="fa fa-bars"></i>
+                                </a>
+                            </div>
+                            <div class="header-search d-flex justify-content-center align-items-center">
+                                <form class="search" action="blogs.html">
+                                    <label for="serch-input">
+                                        <input class=" search-input" id="search-input" type="text" placeholder="Keywords">
+                                    </label>
+                                    <label for="search-submit" class="submit-block">
+                                        <input class="search-submit" id="search-submit" type="submit">
+                                    </label>
+                                    <!-- <i class="fa fa-search"></i> -->
+                                </form>
+                            </div>
+                            <div class="header-login d-flex justify-content-center align-items-center" >
+                                <a href="#" onclick="showHideLogin()">
+                                    <i class="fa fa-sign-in"></i>
+                                </a>
+                                    <div id="login-block" class="login-block">
+                                        <div class="region-user-login">
+                                            <div class="content">
+                                                <form class="login-form" action="#">
+                                                    <div class="form-group">
+                                                        <label class="form-required" for="login-username">Username</label>
+                                                        <input id="login-username" class="login-username" type="text">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="form-required" for="login-password">Password</label>
+                                                        <input id="login-password" class="login-password" type="text">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input class="login-submit" type="submit" value="LOG IN">
+                                                    </div>
+                                                </form>
+                                                <div class="login-options-list">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="#">Reset your password</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <!-- --- -->
+        <!-- SECTION SPORTS MENU -->
+        <section id="sports-menu">
+            <div class="container">
+                <nav class="sports-menu row">
+                    <a class=sports-menu-toggle href="#" onclick="openSportsMenu()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                    <ul class="d-flex flex-wrap sports-menu-list">
+                        <li class="sports-menu-item">
+                            <a href="#">Swimming</a>
+                        </li>
+                        <li class="sports-menu-item">
+                            <a class="drop" href="#">Tennis</a>
+                            <div class="sports-submenu">
+                                <ul class="">
+                                    <li class="sports-submenu-item">
+                                        <a href="#">Tennis Video</a>
+                                    </li>
+                                    <li class="sports-submenu-item">
+                                        <a href="#">WTA Schedule</a>
+                                    </li>
+                                    <li class="sports-submenu-item">
+                                        <a href="#">Tennis Photo</a>
+                                    </li>
+                                    <li class="sports-submenu-item">
+                                        <a href="#">Tennis News</a>
+                                    </li>
+                                    <li class="sports-submenu-item">
+                                        <a href="#">ATP Schedule</a>
+                                    </li>
+                                    <li class="sports-submenu-item">
+                                        <a href="#">Rankings</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="sports-menu-item">
+                            <a href="#">Sailing</a>
+                        </li>
+                        <li class="sports-menu-item">
+                            <a class="drop" href="#">Golf</a>
+                            <div class="sports-submenu">
+                                <ul class="">
+                                    <li class="sports-submenu-item">
+                                        <a href="#">European Tour</a>
+                                    </li>
+                                    <li class="sports-submenu-item">
+                                        <a href="#">Ryder Cup</a>
+                                    </li>
+                                    <li class="sports-submenu-item">
+                                        <a href="#">Open Championship</a>
+                                    </li>
+                                    <li class="sports-submenu-item">
+                                        <a href="#">US PGA Tour</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="sports-menu-item">
+                            <a class="drop" href="#">Football</a>
+                            <div class="sports-submenu">
+                                <ul class="">
+                                    <li class="sports-submenu-item">
+                                        <a href="#">Series A</a>
+                                    </li>
+                                    <li class="sports-submenu-item">
+                                        <a href="#">Ligue 1</a>
+                                    </li>
+                                    <li class="sports-submenu-item">
+                                        <a href="#">Premier League</a>
+                                    </li>
+                                    <li class="sports-submenu-item">
+                                        <a href="#">Scottish Premier</a>
+                                    </li>
+                                    <li class="sports-submenu-item">
+                                        <a href="#">League Two</a>
+                                    </li>
+                                    <li class="sports-submenu-item">
+                                        <a href="#">Live Fixtures</a>
+                                    </li>
+                                    <li class="sports-submenu-item">
+                                        <a href="#">League One</a>
+                                    </li>
+                                    <li class="sports-submenu-item">
+                                        <a href="#">Europa League</a>
+                                    </li>
+                                    <li class="sports-submenu-item">
+                                        <a href="#">Internationals</a>
+                                    </li>
+                                    <li class="sports-submenu-item">
+                                        <a href="#">Bundesliga</a>
+                                    </li>
+                                    <li class="sports-submenu-item">
+                                        <a href="#">Champions League</a>
+                                    </li>
+                                    <li class="sports-submenu-item">
+                                        <a href="#">La Liga</a>
+                                    </li>
+                                    <li class="sports-submenu-item">
+                                        <a href="#">Championship</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="sports-menu-item">
+                            <a href="#">Motorsport</a>
+                        </li>
+                        <li class="sports-menu-item">
+                            <a class="drop" href="#">Cricket</a>
+                            <div class="sports-submenu">
+                                <ul class="">
+                                    <li class="sports-submenu-item">
+                                        <a href="#">County Cricket</a>
+                                    </li>
+                                    <li class="sports-submenu-item">
+                                        <a href="#">Cricket AM</a>
+                                    </li>
+                                    <li class="sports-submenu-item">
+                                        <a href="#">Indian Premier League</a>
+                                    </li>
+                                    <li class="sports-submenu-item">
+                                        <a href="#">International Cricket</a>
+                                    </li>
+                                    <li class="sports-submenu-item">
+                                        <a href="#">Ashes</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="sports-menu-item">
+                            <a class="drop" href="#">Rugby Union</a>
+                            <div class="sports-submenu">
+                                <ul class="">
+                                    <li class="sports-submenu-item">
+                                        <a href="#">Aviva Premiership</a>
+                                    </li>
+                                    <li class="sports-submenu-item">
+                                        <a href="#">British and Irish Lions</a>
+                                    </li>
+                                    <li class="sports-submenu-item">
+                                        <a href="#">Rugby League News</a>
+                                    </li>
+                                    <li class="sports-submenu-item">
+                                        <a href="#">Heineken Cup</a>
+                                    </li>
+                                    <li class="sports-submenu-item">
+                                        <a href="#">Rugby Live on Sky</a>
+                                    </li>
+                                    <li class="sports-submenu-item">
+                                        <a href="#">Rugby Worldcup</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="sports-menu-item">
+                            <a href="#">Skiing</a>
+                        </li>
+                    </ul>
+                    <nav class="sports-menu-mobile">
+                        <div class="container-fluid">
+                            <ul class="sports-menu-mobile-list">
+                                <li class="sports-menu-mobile-item">
+                                    <a href="#">Swimming</a>
+                                </li>
+                                <li class="sports-menu-mobile-item drop-menu">
+                                    <a href="#">Tennis</a>
+                                </li>
+                                <li class="sports-menu-mobile-item">
+                                    <a href="#">Sailling</a>
+                                </li>
+                                <li class="sports-menu-mobile-item drop-menu">
+                                    <a href="#">Golf</a>
+                                </li>
+                                <li class="sports-menu-mobile-item drop-menu">
+                                    <a href="#">Football</a>
+                                </li>
+                                <li class="sports-menu-mobile-item">
+                                    <a href="#">Motorsport</a>
+                                </li>
+                                <li class="sports-menu-mobile-item drop-menu">
+                                    <a href="#">Cricket</a>
+                                </li>
+                                <li class="sports-menu-mobile-item drop-menu">
+                                    <a href="#">Rugby Union</a>
+                                </li>
+                                <li class="sports-menu-mobile-item">
+                                    <a href="#">Skiing</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </nav>
+            </div>
+        </section>
+        <!-- --- -->
+        <!-- SECTION SLIDESHOW -->
+        <section id="slideshow">
+            <div class="container">
+                <div id="slideshow-content" class="carousel slide row" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <a href="#">
+                                <img class="d-block w-100" src="./assets/images/slideshow/slide_1.jpg" alt="First slide">
+                            </a>
+                            <p class="slideshow-caption">
+                                <a href="#">Breaking the Law: eradicate double punishment for penalty area fouls
+                                </a>
+                            </p>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="#">
+                                <img class="d-block w-100" src="./assets/images/slideshow/slide_2.jpg" alt="Second slide">
+                            </a>
+                            <p class="slideshow-caption">
+                                <a href="#">San Lorenzo look to divine alignment to help break Copa Libertadores duck
+                                </a>
+                            </p>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="#">
+                                <img class="d-block w-100" src="./assets/images/slideshow/slide_3.jpg" alt="Third slide">
+                            </a>
+                            <p class="slideshow-caption">
+                                <a href="#">How Tony Pulis turned Crystal Palace from no-hopers into history-makers
+                                </a>
+                            </p>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="#">
+                                <img class="d-block w-100" src="./assets/images/slideshow/slide_4.jpg" alt="Fourth slide">
+                            </a>
+                            <p class="slideshow-caption">
+                                <a href="#">Distineo Illum Nunc Quibus Sudo Typicus
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#slideshow-content" role="button" data-slide="prev">
+                        <span class="control-prev-icon carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#slideshow-content" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- --- -->
+        <!-- SECTION MAIN -->
+        <section id="main">
+            <div class="container">
+                <div class="row region-main">
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+                        <div class="content">
+                            <div class="content-block">
+                                <div class="content-image">
+                                    <img class="img-fluid" src="./assets/images/13_1.jpg" alt="">
+                                </div>
+                                <div class="content-region">
+                                    <div class="content-title">
+                                        <a href="#">Breaking the Law: eradicate double punishment for penalty area fouls</a>
+                                    </div>
+                                    <div class="content-body">
+                                        <p>No matter how many times the incident was replayed, no one could be certain beyond doubt that Sergio Ramos had
+                                            fouled Neymar in last month's clásico.</p>
+                                    </div>
+                                    <div class="content-viewfull btn-viewfull">
+                                        <a href="#">Full story</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="updated">
+                            <h2>Recent Updated</h2>
+                            <div class="updated-body">
+                                <div class="row justify-content-between">
+                                    <div class="updated-item col-md-4 col-sm-6">
+                                        <div class="updated-item-img">
+                                            <img class="img-fluid" src="./assets/images/13_1 (1).jpg" alt="">
+                                        </div>
+                                        <div class="updated-item-title">
+                                            <a href="#">
+                                                Breaking the Law: eradicate double punishment for penalty area fouls
+                                            </a>
+                                        </div>
+                                        <div class="updated-item-time">
+                                            <p>Dec 04, 2015 11:41am</p>
+                                        </div>
+                                        <div class="updated-item-body">
+                                            <p>No matter how many times the incident was replayed, no…</p>
+                                        </div>
+                                        <div class="updated-item-viewfull btn-viewfull">
+                                            <a href="#">Full story</a>
+                                        </div>
+                                    </div>
+                                    <div class="updated-item col-lg-4 col-md-4 col-sm-6">
+                                        <div class="updated-item-img">
+                                            <img class="img-fluid" src="./assets/images/14_0.jpg" alt="">
+                                        </div>
+                                        <div class="updated-item-title">
+                                            <a href="#">
+                                                San Lorenzo look to divine alignment to help break Copa Libertadores duck
+                                            </a>
+                                        </div>
+                                        <div class="updated-item-time">
+                                            <p>Dec 04, 2015 11:41am</p>
+                                        </div>
+                                        <div class="updated-item-body">
+                                            <p>These are unexpectedly heady times for San Lorenzo. They…</p>
+                                        </div>
+                                        <div class="updated-item-viewfull btn-viewfull">
+                                            <a href="#">Full story</a>
+                                        </div>
+                                    </div>
+                                    <div class="updated-item col-lg-4 col-md-4 col-sm-6">
+                                        <div class="updated-item-img">
+                                            <img class="img-fluid" src="./assets/images/15_2.jpg" alt="">
+                                        </div>
+                                        <div class="updated-item-title">
+                                            <a href="#">
+                                                How Tony Pulis turned Crystal Palace from no-hopers into history-makers
+                                            </a>
+                                        </div>
+                                        <div class="updated-item-time">
+                                            <p>Dec 04, 2015 11:41am</p>
+                                        </div>
+                                        <div class="updated-item-body">
+                                            <p>There is an image from Upton Park last Saturday that…</p>
+                                        </div>
+                                        <div class="updated-item-viewfull btn-viewfull">
+                                            <a href="#">Full story</a>
+                                        </div>
+                                    </div>
+                                    <div class="updated-item col-lg-4 col-md-4 col-sm-6">
+                                        <div class="updated-item-img">
+                                            <img class="img-fluid" src="./assets/images/14.jpg" alt="">
+                                        </div>
+                                        <div class="updated-item-title">
+                                            <a href="#">
+                                                Adipiscing Amet Blandit Metuo Paulatim Pertineo Volutpat Vulputate
+                                            </a>
+                                        </div>
+                                        <div class="updated-item-time">
+                                            <p>Dec 04, 2015 11:41am</p>
+                                        </div>
+                                        <div class="updated-item-body">
+                                            <p>Incassum jugis sudo. Damnum defui esse letalis loquor…</p>
+                                        </div>
+                                        <div class="updated-item-viewfull btn-viewfull">
+                                            <a href="#">Full story</a>
+                                        </div>
+                                    </div>
+                                    <div class="updated-item col-lg-4 col-md-4 col-sm-6">
+                                        <div class="updated-item-img">
+                                            <img class="img-fluid" src="./assets/images/9_3.jpg" alt="">
+                                        </div>
+                                        <div class="updated-item-title">
+                                            <a href="#">
+                                                Distineo Illum Nunc Quibus Sudo Typicus
+                                            </a>
+                                        </div>
+                                        <div class="updated-item-time">
+                                            <p>Dec 04, 2015 11:41am</p>
+                                        </div>
+                                        <div class="updated-item-body">
+                                            <p>Olim paulatim refero. Abico at fere quis verto. Accumsan…</p>
+                                        </div>
+                                        <div class="updated-item-viewfull btn-viewfull">
+                                            <a href="#">Full story</a>
+                                        </div>
+                                    </div>
+                                    <div class="updated-item col-lg-4 col-md-4 col-sm-6">
+                                        <div class="updated-item-img">
+                                            <img class="img-fluid" src="./assets/images/18.jpg" alt="">
+                                        </div>
+                                        <div class="updated-item-title">
+                                            <a href="#">
+                                                In Lenis Qui Torqueo
+                                            </a>
+                                        </div>
+                                        <div class="updated-item-time">
+                                            <p>Dec 04, 2015 11:41am</p>
+                                        </div>
+                                        <div class="updated-item-body">
+                                            <p>Eros eu genitus typicus. Hos importunus letalis metuo…</p>
+                                        </div>
+                                        <div class="updated-item-viewfull btn-viewfull">
+                                            <a href="#">Full story</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 main-side-first">
+                        <div class="sidebar-first">
+                            <div class="result-table">
+                                <table class="result-table-premierLeague">
+                                    <thead>
+                                        <tr class="result-table-title">
+                                            <th>Premier League</th>
+                                            <th>W</th>
+                                            <th>D</th>
+                                            <th>L</th>
+                                            <th>Pts</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="result-table-body">
+                                            <td class="result-table-club">
+                                                <a href="#">Manchester City</a>
+                                            </td>
+                                            <td class="result-table-win">26</td>
+                                            <td class="result-table-draw">5</td>
+                                            <td class="result-table-lose">6</td>
+                                            <td class="result-table-points">83</td>
+                                        </tr>
+                                        <tr class="result-table-body">
+                                            <td class="result-table-club">
+                                                <a href="#">Liverpool</a>
+                                            </td>
+                                            <td class="result-table-win">25</td>
+                                            <td class="result-table-draw">6</td>
+                                            <td class="result-table-lose">6</td>
+                                            <td class="result-table-points">81</td>
+                                        </tr>
+                                        <tr class="result-table-body">
+                                            <td class="result-table-club">
+                                                <a href="#">Chelsea</a>
+                                            </td>
+                                            <td class="result-table-win">24</td>
+                                            <td class="result-table-draw">7</td>
+                                            <td class="result-table-lose">6</td>
+                                            <td class="result-table-points">79</td>
+                                        </tr>
+                                        <tr class="result-table-body">
+                                            <td class="result-table-club">
+                                                <a href="#">Arsernal</a>
+                                            </td>
+                                            <td class="result-table-win">23</td>
+                                            <td class="result-table-draw">7</td>
+                                            <td class="result-table-lose">7</td>
+                                            <td class="result-table-points">76</td>
+                                        </tr>
+                                        <tr class="result-table-body">
+                                            <td class="result-table-club">
+                                                <a href="#">Everton</a>
+                                            </td>
+                                            <td class="result-table-win">20</td>
+                                            <td class="result-table-draw">9</td>
+                                            <td class="result-table-lose">8</td>
+                                            <td class="result-table-points">69</td>
+                                        </tr>
+                                        <tr class="result-table-body">
+                                            <td class="result-table-club">
+                                                <a href="#">Tottenham Hotspur</a>
+                                            </td>
+                                            <td class="result-table-win">20</td>
+                                            <td class="result-table-draw">6</td>
+                                            <td class="result-table-lose">11</td>
+                                            <td class="result-table-points">66</td>
+                                        </tr>
+                                        <tr class="result-table-body">
+                                            <td class="result-table-club">
+                                                <a href="#">Manchester United</a>
+                                            </td>
+                                            <td class="result-table-win">19</td>
+                                            <td class="result-table-draw">6</td>
+                                            <td class="result-table-lose">12</td>
+                                            <td class="result-table-points">63</td>
+                                        </tr>
+                                        <tr class="result-table-body">
+                                            <td class="result-table-club">
+                                                <a href="#">Southampton</a>
+                                            </td>
+                                            <td class="result-table-win">15</td>
+                                            <td class="result-table-draw">10</td>
+                                            <td class="result-table-lose">12</td>
+                                            <td class="result-table-points">55</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- Top headlines -->
+                            <div class="headlines">
+                                <h2>
+                                    <span>Top Headlines</span>
+                                </h2>
+                                <div class="content">
+                                    <div class="content-item d-flex">
+                                        <div class="content-item-img">
+                                            <a href="#">
+                                                <img class="img-fluid" src="./assets/images/13_1 (2).jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="content-item-title">
+                                            <a href="#">
+                                                Breaking the Law: eradicate double punishment for…
+                                            </a>
+                                            <div>
+                                                <p>3 years 9 months ago</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="content-item d-flex">
+                                        <div class="content-item-img">
+                                            <a href="#">
+                                                <img class="img-fluid" src="./assets/images/14_0 (1).jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="content-item-title">
+                                            <a href="#">
+                                                San Lorenzo look to divine alignment to help…
+                                            </a>
+                                            <div>
+                                                <p>3 years 9 months ago</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="content-item d-flex">
+                                        <div class="content-item-img">
+                                            <a href="#">
+                                                <img class="img-fluid" src="./assets/images/15_2 (1).jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="content-item-title">
+                                            <a href="#">
+                                                How Tony Pulis turned Crystal Palace from no-hopers…
+                                            </a>
+                                            <div>
+                                                <p>3 years 9 months ago</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="content-item d-flex">
+                                        <div class="content-item-img">
+                                            <a href="#">
+                                                <img class="img-fluid" src="./assets/images/14_0 (1).jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="content-item-title">
+                                            <a href="#">
+                                                Adipiscing Amet Blandit Metuo Paulatim Pertineo…
+                                            </a>
+                                            <div>
+                                                <p>3 years 9 months ago</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="content-item d-flex">
+                                        <div class="content-item-img">
+                                            <a href="#">
+                                                <img class="img-fluid" src="./assets/images/9_3 (1).jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="content-item-title">
+                                            <a href="#">
+                                                Distineo Illum Nunc Quibus Sudo Typicus
+                                            </a>
+                                            <div>
+                                                <p>3 years 9 months ago</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="content-item d-flex">
+                                        <div class="content-item-img">
+                                            <a href="#">
+                                                <img class="img-fluid" src="./assets/images/18 (1).jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="content-item-title">
+                                            <a href="#">
+                                                In Lenis Qui Torqueo
+                                            </a>
+                                            <div>
+                                                <p>3 years 9 months ago</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <!-- Other lastest news -->
+                            <div class="lastest-news">
+                                <h2>
+                                    <span>Other Lastest News</span>
+                                </h2>
+                                <div class="content">
+                                    <ul>
+                                        <li>
+                                            <a href="#">
+                                                Breaking the Law: eradicate double punishment for penalty area fouls
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                San Lorenzo look to divine alignment to help break Copa Libertadores duck
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                How Tony Pulis turned Crystal Palace from no-hopers into history-makers
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Adipiscing Amet Blandit Metuo Paulatim Pertineo Volutpat Vulputate
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Distineo Illum Nunc Quibus Sudo Typicus
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 main-side-second">
+                        <div class="sidebar-second">
+                            <div class="trending">
+                                <h2>
+                                    <span>Trending now</span>
+                                </h2>
+                                <div class="content">
+                                    <div class="trending-list">
+                                        <div class="trending-item">
+                                            <div class="trending-title">
+                                                <span>
+                                                    <a href="#">Immitto Iriure Refoveo</a>
+                                                </span>
+                                            </div>
+                                            <div class="trending-body">
+                                                <p>
+                                                    Acsi pala sagaciter singularis suscipere tamen
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="trending-item">
+                                            <div class="trending-title">
+                                                <span>
+                                                    <a href="#">Commodo Molior Secundum</a>
+                                                </span>
+                                            </div>
+                                            <div class="trending-body">
+                                                <p>
+                                                    Feugiat haero laoreet lobortis quidne zelus.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="trending-item">
+                                            <div class="trending-title">
+                                                <span>
+                                                    <a href="#">Suscipere</a>
+                                                </span>
+                                            </div>
+                                            <div class="trending-body">
+                                                <p>
+                                                    Feugiat haero laoreet lobortis quidne zelus.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="trending-item">
+                                            <div class="trending-title">
+                                                <span>
+                                                    <a href="#">WSR Part 3: Asia, New Frontiers</a>
+                                                </span>
+                                            </div>
+                                            <div class="trending-body">
+                                                <p>
+                                                    The WSR is heading to Asia in this latest video
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="trending-item">
+                                            <div class="trending-title">
+                                                <span>
+                                                    <a href="#">Paris match helped Brazil to get their World Cup homework</a>
+                                                </span>
+                                            </div>
+                                            <div class="trending-body">
+                                                <p>
+                                                    Twenty years ago this week, on a chilly spring
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="trending-item">
+                                            <div class="trending-title">
+                                                <span>
+                                                    <a href="#">Consectetuer Ea Scisco</a>
+                                                </span>
+                                            </div>
+                                            <div class="trending-body">
+                                                <p>
+                                                    Suspendisse vitae massa volutpat, pharetra nun
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="trending-item">
+                                            <div class="trending-title">
+                                                <span>
+                                                    <a href="#">Amet Commoveo Obruo Tation Vulputate</a>
+                                                </span>
+                                            </div>
+                                            <div class="trending-body">
+                                                <p>
+                                                    Accumsan adipiscing at augue ille quadrum saepi
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="trending-more-link">
+                                        <a href="#">more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- --- -->
+        <!-- SECTION PANEL FIRST -->
+        <section id="panel-first">
+            <div class="container">
+                <div class="region-panel-first">
+                    <h2>
+                        <span>Explore the Olympia</span>
+                    </h2>
+                    <div class="content owl-carousel owl-theme">
+                        <div class="content-item">
+                            <div class="content-category">
+                                <div class="name">
+                                    <a href="#">Champions League</a>
+                                </div>
+                            </div>
+                            <div class="content-img">
+                                <a href="#">
+                                    <img class="img-fluid" src="./assets/images/13_1 (1).jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="content-title">
+                                <a href="#">Breaking the Law: eradicate double punishment for penalty</a>
+                            </div>
+                            <div class="content-changed">
+                                <span>Dec 04, 2015 11:41am</span>
+                            </div>
+                            <div class="content-body">
+                                <div>
+                                    <p>No matter how many times the incident was replayed, no one could be certain beyond doubt that Sergio Ramos had fouled
+                                        Neymar in last month's clásic</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content-item">
+                            <div class="content-category">
+                                <div class="name">
+                                    <a href="#">Champions League</a>
+                                </div>
+                            </div>
+                            <div class="content-img">
+                                <a href="#">
+                                    <img class="img-fluid" src="./assets/images/14_0.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="content-title">
+                                <a href="#">San Lorenzo look to divine alignment to help brea</a>
+                            </div>
+                            <div class="content-changed">
+                                <span>Dec 04, 2015 11:41am</span>
+                            </div>
+                            <div class="content-body">
+                                <div>
+                                    <p>These are unexpectedly heady times for San Lorenzo.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content-item">
+                            <div class="content-category">
+                                <div class="name">
+                                    <a href="#">Champions League</a>
+                                </div>
+                            </div>
+                            <div class="content-img">
+                                <a href="#">
+                                    <img class="img-fluid" src="./assets/images/15_2.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="content-title">
+                                <a href="#">How Tony Pulis turned Crystal Palace from no-hopers int</a>
+                            </div>
+                            <div class="content-changed">
+                                <span>Dec 04, 2015 11:41am</span>
+                            </div>
+                            <div class="content-body">
+                                <div>
+                                    <p>There is an image from Upton Park last Saturday that sums up a season.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content-item">
+                            <div class="content-category">
+                                <div class="name">
+                                    <a href="#">Champions League</a>
+                                </div>
+                            </div>
+                            <div class="content-img">
+                                <a href="#">
+                                    <img class="img-fluid" src="./assets/images/17_0.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="content-title">
+                                <a href="#">The Joy of Six: extreme sporting conditions</a>
+                            </div>
+                            <div class="content-changed">
+                                <span>Dec 04, 2015 11:41am</span>
+                            </div>
+                            <div class="content-body">
+                                <div>
+                                    <p>Everyone has experienced that crushing silence that comes when a conversation with someone you don't really know or
+                                        like is grinding to an inevitab</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content-item">
+                            <div class="content-category">
+                                <div class="name">
+                                    <a href="#">Ligue 1</a>
+                                </div>
+                            </div>
+                            <div class="content-img">
+                                <a href="#">
+                                    <img class="img-fluid" src="./assets/images/football-1.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="content-title">
+                                <a href="#">Full-backs: they're so hot right now!</a>
+                            </div>
+                            <div class="content-changed">
+                                <span>Dec 04, 2015 11:41am</span>
+                            </div>
+                            <div class="content-body">
+                                <div>
+                                    <p>Football can at times look like a seductively simple business.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content-item">
+                            <div class="content-category">
+                                <div class="name">
+                                    <a href="#">Live Fixtures</a>
+                                </div>
+                            </div>
+                            <div class="content-img">
+                                <a href="#">
+                                    <img class="img-fluid" src="./assets/images/14_0.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="content-title">
+                                <a href="#">Adipiscing Amet Blandit Metuo Paulatim Pertineo Vo</a>
+                            </div>
+                            <div class="content-changed">
+                                <span>Dec 04, 2015 11:41am</span>
+                            </div>
+                            <div class="content-body">
+                                <div>
+                                    <p>Incassum jugis sudo. Damnum defui esse letalis loquor natu nostrud praesent similis vulputate.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content-item">
+                            <div class="content-category">
+                                <div class="name">
+                                    <a href="#">League Two</a>
+                                </div>
+                            </div>
+                            <div class="content-img">
+                                <a href="#">
+                                    <img class="img-fluid" src="./assets/images/9_3.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="content-title">
+                                <a href="#">Distineo Illum Nunc Quibus Sudo Typicus</a>
+                            </div>
+                            <div class="content-changed">
+                                <span>Dec 04, 2015 11:41am</span>
+                            </div>
+                            <div class="content-body">
+                                <div>
+                                    <p>Olim paulatim refero. Abico at fere quis verto. Accumsan capto ideo iustum molior tation te uxor volutpat. Conventio
+                                        eum quidne.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content-item">
+                            <div class="content-category">
+                                <div class="name">
+                                    <a href="#">League One</a>
+                                </div>
+                            </div>
+                            <div class="content-img">
+                                <a href="#">
+                                    <img class="img-fluid" src="./assets/images/17_0.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="content-title">
+                                <a href="#">In Lenis Qui Torqueo</a>
+                            </div>
+                            <div class="content-changed">
+                                <span>Dec 04, 2015 11:41am</span>
+                            </div>
+                            <div class="content-body">
+                                <div>
+                                    <p>Eros eu genitus typicus. Hos importunus letalis metuo praesent premo sit utinam. Accumsan aliquip bene lenis. Eum
+                                        lucidus quis.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- --- -->
+        <!-- SECTION PANEL SECOND -->
+        <section id="panel-second">
+            <div class="container">
+                <div class="region-panel-second">
+                    <h2>
+                        <span>Select Your Team For Team News</span>
+                    </h2>
+                    <div class="content">
+                        <div class="listing-team"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- --- -->
+        <!-- SECTION PANEL-THIRD -->
+        <section id="panel-third">
+            <div class="container">
+                <div class="region-panel-third">
+                    <h2>
+                        <span>Highlight News</span>
+                    </h2>
+                    <div class="content">
+                        <div class="highlight-news-show">
+                            <div class="highlight-news">
+                                <div class="highlight-news-img">
+                                    <img class="img-fluid" src="./assets/images/19.jpg" alt="">
+                                </div>
+                                <div class="highlight-news-content">
+                                    <div class="highlight-news-title">
+                                        <a href="#">Exputo Modo Nibh Os Pala Patria Pneum Roto</a>
+                                    </div>
+                                    <div class="highlight-news-changed">
+                                        <span>Dec 04, 2015 11:13am</span>
+                                    </div>
+                                    <div class="highlight-news-body">
+                                        <p>Aliquip consectetuer loquor typicus virtus. Abbas blandit pala sed. Conventio immitto lenis luctus nibh valde vero.
+                                            Abigo aliquip qui quidem si
+                                            vindico. Abigo blandit ea. Letalis virtus vulpes. Mauris suscipere typicus. Ex ibidem ideo lobortis mauris meus
+                                            sed valetudo. Nisl occuro premo qui
+                                            quidne sagaciter tincidunt velit. Dolor esse huic jumentum ratis secundum ymo. Aliquip consequat esse hos refero
+                                            si torqueo vulputate. Accumsan haero
+                                            pecus quae refoveo. Causa comis ille interdico lenis…</p>
+                                    </div>
+                                    <div class="highlight-news-viewfull btn-viewfull">
+                                        <a href="#">
+                                            Full story
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="highlight-news">
+                                <div class="highlight-news-img">
+                                    <img class="img-fluid" src="./assets/images/13_0.jpg" alt="">
+                                </div>
+                                <div class="highlight-news-content">
+                                    <div class="highlight-news-title">
+                                        <a href="#">Finch leads Sunrisers to first win</a>
+                                    </div>
+                                    <div class="highlight-news-changed">
+                                        <span>Dec 04, 2015 11:13am</span>
+                                    </div>
+                                    <div class="highlight-news-body">
+                                        <p>Bhuvneshwar Kumar (0-40) needed to defend 20 runs from the final six deliveries but conceded 15 nervous runs as JP
+                                            Duminy (20 not out) smashed the
+                                            second last ball for six to set up a tense final delivery, but Kumar held his nerve and delivered a Yorker which
+                                            Duminy could only punch down the
+                                            ground for two. The Daredevils replied with 180 for the loss of four wickets after the Sunrisers had posted 184
+                                            for one after winning the toss and
+                                            electing to bat first. The Daredevils’ chase began well…</p>
+                                    </div>
+                                    <div class="highlight-news-viewfull btn-viewfull">
+                                        <a href="#">
+                                            Full story
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="highlight-news">
+                                <div class="highlight-news-img">
+                                    <img class="img-fluid" src="./assets/images/13_0.jpg" alt="">
+                                </div>
+                                <div class="highlight-news-content">
+                                    <div class="highlight-news-title">
+                                        <a href="#">Breaking the Law: eradicate double punishment for penalty area fouls</a>
+                                    </div>
+                                    <div class="highlight-news-changed">
+                                        <span>Dec 04, 2015 11:13am</span>
+                                    </div>
+                                    <div class="highlight-news-body">
+                                        <p>No matter how many times the incident was replayed, no one could be certain beyond doubt that Sergio Ramos had
+                                            fouled Neymar in last month's clásico.
+                                            Some people, squinting hard and slowing down the replay as much as possible, claimed that they could see the
+                                            slightest of touches from Ramos, while
+                                            others insisted that Neymar had made the most of what was minimal contact at best and conned the referee. Even
+                                            after countless viewings, the evidence
+                                            was inconclusive. For Alberto Undiano Mallenco,…</p>
+                                    </div>
+                                    <div class="highlight-news-viewfull btn-viewfull">
+                                        <a href="#">
+                                            Full story
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="highlight-news">
+                                <div class="highlight-news-img">
+                                    <img class="img-fluid" src="./assets/images/14 (1).jpg" alt="">
+                                </div>
+                                <div class="highlight-news-content">
+                                    <div class="highlight-news-title">
+                                        <a href="#">San Lorenzo look to divine alignment to help break Copa Libertadores duck</a>
+                                    </div>
+                                    <div class="highlight-news-changed">
+                                        <span>Dec 04, 2015 11:13am</span>
+                                    </div>
+                                    <div class="highlight-news-body">
+                                        <p>These are unexpectedly heady times for San Lorenzo. They are the Argentinian champions, and Wednesday night's 1-0
+                                            over Grêmio in the first leg of
+                                            their last-16 tie took them a step closer to winning the Copa Libertadores for the first time. There's a long way
+                                            to go yet, but this is a ferociously
+                                            competitive side blessed with an exceptional young forward in Ángel Correa and, moreover, they are playing with a
+                                            self-belief that defies rational
+                                            explanation.</p>
+                                    </div>
+                                    <div class="highlight-news-viewfull btn-viewfull">
+                                        <a href="#">
+                                            Full story
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="highlight-news">
+                                <div class="highlight-news-img">
+                                    <img class="img-fluid" src="./assets/images/15_2 (2).jpg" alt="">
+                                </div>
+                                <div class="highlight-news-content">
+                                    <div class="highlight-news-title">
+                                        <a href="#">How Tony Pulis turned Crystal Palace from no-hopers into history-makers</a>
+                                    </div>
+                                    <div class="highlight-news-changed">
+                                        <span>Dec 04, 2015 11:13am</span>
+                                    </div>
+                                    <div class="highlight-news-body">
+                                        <p>There is an image from Upton Park last Saturday that sums up a season. In it 12 Crystal Palace players, all but the
+                                            goalkeeper clad in yellow with
+                                            hands interlocked and arms held aloft, are saluting an away contingent joyously spilling from the lower tier of
+                                            the Sir Trevor Brooking stand. A 13th,
+                                            Jason Puncheon, is absent and still handing over his shirt to a fan by the billboards but the sea of smiles beyond
+                                            the line tells its own story.
+                                            Mid-table obscurity, out of the glare of European…</p>
+                                    </div>
+                                    <div class="highlight-news-viewfull btn-viewfull">
+                                        <a href="#">
+                                            Full story
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="highlight-news">
+                                <div class="highlight-news-img">
+                                    <img class="img-fluid" src="./assets/images/14 (1).jpg" alt="">
+                                </div>
+                                <div class="highlight-news-content">
+                                    <div class="highlight-news-title">
+                                        <a href="#">Adipiscing Amet Blandit Metuo Paulatim Pertineo Volutpat Vulputate</a>
+                                    </div>
+                                    <div class="highlight-news-changed">
+                                        <span>Dec 04, 2015 11:13am</span>
+                                    </div>
+                                    <div class="highlight-news-body">
+                                        <p>Incassum jugis sudo. Damnum defui esse letalis loquor natu nostrud praesent similis vulputate. Consequat eros haero
+                                            jugis metuo occuro quidne roto
+                                            singularis uxor. Amet euismod in velit. Gravis iustum luctus mos refero suscipit virtus ymo. Abbas cui esca fere
+                                            macto sino tamen vereor. Abigo elit
+                                            erat pertineo rusticus. Amet aptent cui persto sudo vereor. Diam eligo et ex quis si wisi. Exerci humo metuo.
+                                            Minim nimis nostrud paulatim singularis
+                                            vindico. Aliquip camur sudo tum ulciscor. Camur ea…</p>
+                                    </div>
+                                    <div class="highlight-news-viewfull btn-viewfull">
+                                        <a href="#">
+                                            Full story
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="highlight-news">
+                                <div class="highlight-news-img">
+                                    <img class="img-fluid" src="./assets/images/9_3 (2).jpg" alt="">
+                                </div>
+                                <div class="highlight-news-content">
+                                    <div class="highlight-news-title">
+                                        <a href="#">Distineo Illum Nunc Quibus Sudo Typicus</a>
+                                    </div>
+                                    <div class="highlight-news-changed">
+                                        <span>Dec 04, 2015 11:13am</span>
+                                    </div>
+                                    <div class="highlight-news-body">
+                                        <p>Olim paulatim refero. Abico at fere quis verto. Accumsan capto ideo iustum molior tation te uxor volutpat.
+                                            Conventio eum quidne. Abbas eros incassum
+                                            iusto ut wisi. Blandit dignissim haero valetudo validus. At jumentum patria. Consequat quia sed. Cui immitto
+                                            importunus saepius turpis valde. Gravis
+                                            nostrud nunc roto secundum tincidunt volutpat vulputate. Comis decet molior nobis quidem saepius. Abigo accumsan
+                                            imputo si sino tum. Damnum fere
+                                            nostrud persto quadrum quia validus. Adipiscing eligo…</p>
+                                    </div>
+                                    <div class="highlight-news-viewfull btn-viewfull">
+                                        <a href="#">
+                                            Full story
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="highlight-news">
+                                <div class="highlight-news-img">
+                                    <img class="img-fluid" src="./assets/images/18 (2).jpg" alt="">
+                                </div>
+                                <div class="highlight-news-content">
+                                    <div class="highlight-news-title">
+                                        <a href="#">In Lenis Qui Torqueo</a>
+                                    </div>
+                                    <div class="highlight-news-changed">
+                                        <span>Dec 04, 2015 11:13am</span>
+                                    </div>
+                                    <div class="highlight-news-body">
+                                        <p>Eros eu genitus typicus. Hos importunus letalis metuo praesent premo sit utinam. Accumsan aliquip bene lenis. Eum
+                                            lucidus quis. Camur consectetuer
+                                            defui eros ex letalis quia suscipere tum validus. Acsi hos importunus oppeto zelus. Appellatio consequat eu hos in
+                                            iustum minim proprius. Comis eros
+                                            esse ex macto pecus valde verto. Aptent humo iriure patria tincidunt velit vero. Adipiscing distineo enim haero
+                                            huic pertineo quae uxor verto vulpes.
+                                            Abigo aliquip brevitas commoveo magna sed tamen…</p>
+                                    </div>
+                                    <div class="highlight-news-viewfull btn-viewfull">
+                                        <a href="#">
+                                            Full story
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="highlight-news">
+                                <div class="highlight-news-img">
+                                    <img class="img-fluid" src="./assets/images/20_0.jpg" alt="">
+                                </div>
+                                <div class="highlight-news-content">
+                                    <div class="highlight-news-title">
+                                        <a href="#">Dignissim Meus Similis</a>
+                                    </div>
+                                    <div class="highlight-news-changed">
+                                        <span>Dec 04, 2015 11:13am</span>
+                                    </div>
+                                    <div class="highlight-news-body">
+                                        <p>Amet iriure vulpes. Augue erat olim pecus. Consectetuer conventio genitus importunus imputo persto. Dolore gemino
+                                            proprius. Dolor luctus os plaga
+                                            probo valde valetudo. Distineo esse gravis ibidem importunus iustum macto magna suscipere typicus. Augue causa
+                                            laoreet sino tincidunt venio vereor.
+                                            Aptent dolus eu huic ibidem odio paratus pertineo quidem ymo. Bene eros iriure te. Duis iustum meus refoveo
+                                            sagaciter tamen ullamcorper utrum veniam.
+                                            Dignissim jumentum lucidus minim te. Abbas jugis…</p>
+                                    </div>
+                                    <div class="highlight-news-viewfull btn-viewfull">
+                                        <a href="#">
+                                            Full story
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="highlight-news">
+                                <div class="highlight-news-img">
+                                    <img class="img-fluid" src="./assets/images/moto-5.jpg" alt="">
+                                </div>
+                                <div class="highlight-news-content">
+                                    <div class="highlight-news-title">
+                                        <a href="#">Gilvus Scisco Typicus</a>
+                                    </div>
+                                    <div class="highlight-news-changed">
+                                        <span>Dec 04, 2015 11:13am</span>
+                                    </div>
+                                    <div class="highlight-news-body">
+                                        <p>Et nibh praesent tamen. Saluto tincidunt turpis. Blandit ille melior nibh olim uxor. Aliquam dolus exputo jugis
+                                            letalis occuro quia. Aliquip augue
+                                            eligo iriure nunc qui. Ad aptent causa humo macto minim saepius vero voco.</p>
+                                        <p>Abigo antehabeo facilisi ideo nulla patria scisco velit. Acsi eu lucidus oppeto vereor.</p>
+                                        <p>Dolor iustum virtus. Decet dignissim proprius usitas. Adipiscing camur diam dolor elit nobis saepius valde. Ideo
+                                            neque pagus pala proprius. Hendrerit
+                                            imputo jus luctus…</p>
+                                    </div>
+                                    <div class="highlight-news-viewfull btn-viewfull">
+                                        <a href="#">
+                                            Full story
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="highlight-news">
+                                <div class="highlight-news-img">
+                                    <img class="img-fluid" src="./assets/images/football-1_1.jpg" alt="">
+                                </div>
+                                <div class="highlight-news-content">
+                                    <div class="highlight-news-title">
+                                        <a href="#">Abdo Dignissim Mos Persto Saepius Tum Turpis</a>
+                                    </div>
+                                    <div class="highlight-news-changed">
+                                        <span>Dec 04, 2015 11:13am</span>
+                                    </div>
+                                    <div class="highlight-news-body">
+                                        <p>Abbas aliquam camur comis genitus plaga quidne quis tincidunt validus. Comis eros esca iaceo rusticus venio.
+                                            Genitus pagus ymo zelus. Adipiscing
+                                            aliquip blandit lenis quae rusticus sino utrum validus vindico. Accumsan comis distineo nibh patria scisco usitas
+                                            valde. Aliquam commoveo oppeto os
+                                            ratis sudo turpis. Conventio sed sino sudo suscipere volutpat zelus. Dolore feugiat macto probo torqueo tum utinam
+                                            volutpat. Commodo hos nibh nostrud
+                                            nulla quia quidne. Amet pagus sed. Abbas enim nunc…</p>
+                                    </div>
+                                    <div class="highlight-news-viewfull btn-viewfull">
+                                        <a href="#">
+                                            Full story
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="highlight-news">
+                                <div class="highlight-news-img">
+                                    <img class="img-fluid" src="./assets/images/20_0.jpg" alt="">
+                                </div>
+                                <div class="highlight-news-content">
+                                    <div class="highlight-news-title">
+                                        <a href="#">Damnum Decet Incassum Iustum Molior Ratis</a>
+                                    </div>
+                                    <div class="highlight-news-changed">
+                                        <span>Dec 04, 2015 11:13am</span>
+                                    </div>
+                                    <div class="highlight-news-body">
+                                        <p>Nunc in turpis ac magna porttitor tincidunt. Sed dictum sapien vel velit faucibus, vel varius augue egestas. Fusce
+                                            sollicitudin sed metus eu cursus.
+                                            Proin eget enim justo. Sed cursus ullamcorper eros eu iaculis. Vestibulum convallis odio neque, eget pretium orci
+                                            ornare nec. Vivamus non facilisis
+                                            elit. Duis cursus nisi eu enim molestie, vel accumsan ante commodo. Donec dictum augue at enim scelerisque, a
+                                            convallis quam pretium. Aenean non nisl
+                                            purus.</p>
+                                        <p>Maecenas condimentum erat eget…</p>
+                                    </div>
+                                    <div class="highlight-news-viewfull btn-viewfull">
+                                        <a href="#">
+                                            Full story
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="highlight-news-options d-flex align-items-center">
+                            <div class="highlight-news-list">
+                                <div class="item">
+                                    <a href="javascript:void(0)">
+                                        <img class="img-fluid" src="./assets/images/19.jpg" alt="">
+                                    </a>
+                                    <div class="item-hover">
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <a href="javascript:void(0)">
+                                        <img class="img-fluid" src="./assets/images/13_0.jpg" alt="">
+                                    </a>
+                                    <div class="item-hover">
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <a href="javascript:void(0)">
+                                        <img class="img-fluid" src="./assets/images/13_0.jpg" alt="">
+                                    </a>
+                                    <div class="item-hover">
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <a href="javascript:void(0)">
+                                        <img class="img-fluid" src="./assets/images/14 (1).jpg" alt="">
+                                    </a>
+                                    <div class="item-hover">
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <a href="javascript:void(0)">
+                                        <img class="img-fluid" src="./assets/images/15_2 (2).jpg" alt="">
+                                    </a>
+                                    <div class="item-hover">
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <a href="javascript:void(0)">
+                                        <img class="img-fluid" src="../assets/images/14 (1).jpg" alt="">
+                                    </a>
+                                    <div class="item-hover">
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <a href="javascript:void(0)">
+                                        <img class="img-fluid" src="./assets/images/9_3 (2).jpg" alt="">
+                                    </a>
+                                    <div class="item-hover">
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <a href="javascript:void(0)">
+                                        <img class="img-fluid" src="./assets/images/18 (2).jpg" alt="">
+                                    </a>
+                                    <div class="item-hover">
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <a href="javascript:void(0)">
+                                        <img class="img-fluid" src="./assets/images/20_0.jpg" alt="">
+                                    </a>
+                                    <div class="item-hover">
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <a href="javascript:void(0)">
+                                        <img class="img-fluid" src="./assets/images/moto-5.jpg" alt="">
+                                    </a>
+                                    <div class="item-hover">
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <a href="javascript:void(0)">
+                                        <img class="img-fluid" src="./assets/images/football-1_1.jpg" alt="">
+                                    </a>
+                                    <div class="item-hover">
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <a href="javascript:void(0)">
+                                        <img class="img-fluid" src="./assets/images/20_0.jpg" alt="">
+                                    </a>
+                                    <div class="item-hover">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- --- -->
+        <!-- SECTION FOURTH -->
+        <section id="panel-fourth">
+            <div class="container">
+                <div class="region-panel-fourth">
+                    <h2>
+                        <span>Videos</span>
+                    </h2>
+                    <div class="content">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-3 col-sm-3 video-item">
+                                <div class="video">
+                                    <a href="#">
+                                        <img class="img-fluid" src="./assets/images/Eb9BXUweXw8.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="video-title">
+                                    <span>
+                                        <a href="#">MESSI v RONALDO - Decided By Girls</a>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-3  video-item">
+                                <div class="video">
+                                    <a href="#">
+                                        <img class="img-fluid" src="./assets/images/ZDW1vbgdyyQ.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="video-title">
+                                    <span>
+                                        <a href="#">Lionel Messi vs Manchester City</a>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-3  video-item">
+                                <div class="video">
+                                    <a href="#">
+                                        <img class="img-fluid" src="./assets/images/PjrJeo9SxWI.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="video-title">
+                                    <span>
+                                        <a href="#">Funny football 2014</a>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-3  video-item">
+                                <div class="video">
+                                    <a href="#">
+                                        <img class="img-fluid" src="./assets/images/8cztsxP1iVQ.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="video-title">
+                                    <span>
+                                        <a href="#">Djokovic vs Wawrinka Best Point of The Year</a>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-3  video-item">
+                                <div class="video">
+                                    <a href="#">
+                                        <img class="img-fluid" src="./assets/images/XDWNrvXL9Gs.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="video-title">
+                                    <span>
+                                        <a href="#">Australian Open 2012 Mens Finals Novak Djokovic vs Rafael Nadal</a>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-3  video-item">
+                                <div class="video">
+                                    <a href="#">
+                                        <img class="img-fluid" src="./assets/images/4b9Ji7DvsjU.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="video-title">
+                                    <span>
+                                        <a href="#">Winter Olympics 2014: Trailer - BBC Sport</a>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-3  video-item">
+                                <div class="video">
+                                    <a href="#">
+                                        <img class="img-fluid" src="./assets/images/ORGccTrQ9Ps.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="video-title">
+                                    <span>
+                                        <a href="#">BBC SPORT - SIX NATIONS RUGBY</a>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-3  video-item">
+                                <div class="video">
+                                    <a href="#">
+                                        <img class="img-fluid" src="./assets/images/ZlqYEyYwGkM.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="video-title">
+                                    <span>
+                                        <a href="#">Sky News Sports - Rome World Swimming Championships</a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- --- -->
+        <section id="panel-fifth">
+            <div class="container">
+                <div class="region-panel-fifth row">
+                    <div class="col-md-2 col-sm-12">
+                        <div class="region region-panel-fifth-1">
+                            <h2>
+                                <span>Football</span>
+                            </h2>
+                            <div class="content">
+                                <ul>
+                                    <li>
+                                        <a href="#">Series A</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Ligue 1</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Premier League</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Scottish Premier</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">League Two</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Live Fixtures</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">League One</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Internationals</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Champions League</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">La Liga</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-12">
+                        <div class="region region-panel-fifth-2">
+                            <h2>
+                                <span>Rugby Union</span>
+                            </h2>
+                            <ul>
+                                <li>
+                                    <a href="#">Aviva Premiership</a>
+                                </li>
+                                <li>
+                                    <a href="#">Rugby League News</a>
+                                </li>
+                                <li>
+                                    <a href="#">Rugby Live on Sky</a>
+                                </li>
+                            </ul>
+                            <h2>
+                                <span>Cricket</span>
+                            </h2>
+                            <ul>
+                                <li>
+                                    <a href="#">County Cricket</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-12">
+                        <div class="region region-panel-fifth-3">
+                            <h2>
+                                <span>Golf</span>
+                            </h2>
+                            <ul>
+                                <li>
+                                    <a href="#">European Tour</a>
+                                </li>
+                                <li>
+                                    <a href="#">Ryder Cup</a>
+                                </li>
+                                <li>
+                                    <a href="#">US PGA Tour</a>
+                                </li>
+                            </ul>
+                            <h2>
+                                <span>Tennis</span>
+                            </h2>
+                            <ul>
+                                <li>
+                                    <a href="#">Tennis Video</a>
+                                </li>
+                                <li>
+                                    <a href="#">WTA Schedule</a>
+                                </li>
+                                <li>
+                                    <a href="#">Tennis Photo</a>
+                                </li>
+                                <li>
+                                    <a href="#">Tenis News</a>
+                                </li>
+                                <li>
+                                    <a href="#">Rankings</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-12">
+                        <div class="region region-panel-fifth-4">
+                            <h2>
+                                <span>More Sports</span>
+                            </h2>
+                            <ul>
+                                <li>
+                                    <a href="#">Boxing</a>
+                                </li>
+                                <li>
+                                    <a href="#">Horce Racing</a>
+                                </li>
+                                <li>
+                                    <a href="#">Cycling</a>
+                                </li>
+                                <li>
+                                    <a href="#">Snooker</a>
+                                </li>
+                                <li>
+                                    <a href="#">Darts</a>
+                                </li>
+                                <li>
+                                    <a href="#">NFL</a>
+                                </li>
+                                <li>
+                                    <a href="#">Speedway</a>
+                                </li>
+                                <li>
+                                    <a href="#">Motor Sport</a>
+                                </li>
+                                <li>
+                                    <a href="#">WWE</a>
+                                </li>
+                                <li>
+                                    <a href="#">Olympics</a>
+                                </li>
+                                <li>
+                                    <a href="#">Sports Calendar</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12">
+                        <div class="region region-panel-fifth-5">
+                            <h2>
+                                <span>BBC Tweets</span>
+                            </h2>
+                            <div class="connect">
+                                <p>Or connect with us</p>
+                                <ul class="social-list">
+                                    <li>
+                                        <a class="fa fa-facebook" href="#">
+                                            <span>Facebook</span>
+                                        </a>
+                                        </i>
+                                    <li>
+                                        <a class="fa fa-twitter" href="#">
+                                            <span>Twitter</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="fa fa-google-plus" href="#">
+                                            <span>Google</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer id="footer">
+            <div class="container">
+                <div class="region-footer row">
+                    <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 copyright">
+                        <p>Copyright © 2014 Sport Magazine. All Rights Reserved. Designed by <a href="#">WeebPal</a>. Powered by <a href="#">Drupal</a></p>
+                    </div>
+                    <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 menu-footer">
+                        <ul>
+                            <li class="active">
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li>
+                                <a href="#">About Us</a>
+                            </li>
+                            <li>
+                                <a href="#">FAQ</a>
+                            </li>
+                            <li>
+                                <a href="#">Privacy Policy</a>
+                            </li>
+                            <li>
+                                <a href="#">Terms & Conditions</a>
+                            </li>
+                            <li>
+                                <a href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <a href="#top" class="btn-btt">
+        </a>
+    </div>
+    
+
+    <!-- <script src="https://use.fontawesome.com/4dc290b54a.js"></script> -->
+
+    <script src="./assets/jquery-slim/jquery.min.js"></script>
+    <!-- <script src="./assets/jquery-slim/jquery.slim.min.js"></script> -->
+    <script src="./assets/popper-js/popper.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="./assets/carousel/owl.carousel.min.js"></script>
+    <script src="./assets/slick-1.8.1/slick/slick.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>

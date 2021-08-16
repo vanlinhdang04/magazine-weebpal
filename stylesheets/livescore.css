@@ -1,0 +1,193 @@
+@font-face {
+  font-family: opensans;
+  src: url(../assets/fonts/opensans-regular-webfont.woff2);
+}
+@font-face {
+  font-family: oregon;
+  src: url(../assets/fonts/oregon_ldo-webfont.woff);
+}
+@font-face {
+  font-family: fontAwesome;
+  src: url(../assets/fonts/fontawesome-webfont.woff2);
+}
+@font-face {
+  font-family: titillium;
+  src: url(../assets/fonts/titillium-regular-webfont.woff);
+}
+@font-face {
+  font-family: rotobo;
+  src: url(../assets/fonts/rotobo_font.woff2);
+}
+/* line 3, ../sass/livescore.scss */
+#livescore {
+  position: relative;
+}
+/* line 6, ../sass/livescore.scss */
+#livescore .container {
+  background-color: #fff;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+/* line 15, ../sass/livescore.scss */
+.region-livescore-title h1 {
+  font-family: titillium;
+  font-weight: 400;
+  line-height: 1.2;
+  margin: 0 0 30px;
+  font-size: 36px;
+}
+
+/* line 23, ../sass/livescore.scss */
+.region-livescore-table {
+  margin-top: 30px;
+  background: none;
+  color: #fff;
+  overflow-x: auto;
+}
+
+/* line 29, ../sass/livescore.scss */
+.livescore-table {
+  width: 100%;
+  background-color: #2caaa6;
+}
+
+/* line 33, ../sass/livescore.scss */
+.livescore-table tbody tr:nth-child(odd) {
+  background-color: #56bbb8;
+}
+
+/* line 37, ../sass/livescore.scss */
+.view-field {
+  padding: 6px 5px;
+  text-align: right;
+  font-weight: 300;
+}
+
+/* line 42, ../sass/livescore.scss */
+.view-field-time {
+  line-height: 20px;
+  padding-left: 15px;
+  text-align: left;
+}
+
+/* line 47, ../sass/livescore.scss */
+.view-field-teama {
+  font-family: oregon;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+/* line 54, ../sass/livescore.scss */
+.view-field-teamb {
+  font-family: oregon;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+/* line 59, ../sass/livescore.scss */
+.view-field-category {
+  padding-right: 15px;
+  text-align: right;
+  font-family: titillium;
+}
+/* line 63, ../sass/livescore.scss */
+.view-field-category a {
+  color: #fff;
+}
+
+/* line 68, ../sass/livescore.scss */
+.field-changed {
+  color: #777777;
+  font-weight: 700;
+  display: block;
+  padding: 10px 0;
+  text-align: center;
+}
+
+/* line 75, ../sass/livescore.scss */
+.match {
+  border: 5px solid #eb6a14;
+  margin-top: 10px;
+  padding: 0 30px 30px;
+  text-align: center;
+}
+/* line 81, ../sass/livescore.scss */
+.match h2 {
+  margin-bottom: 70px;
+  margin-top: -15px;
+  padding-left: 0;
+  position: relative;
+  width: 100%;
+  background-color: #eb6a14;
+  border: none;
+  color: #fff;
+  line-height: 1;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.71429em;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+/* line 97, ../sass/livescore.scss */
+.match h2 span {
+  display: block;
+  color: #fff;
+  margin-top: 0;
+  padding: 20px 29px 0;
+}
+/* line 104, ../sass/livescore.scss */
+.match h2::before {
+  border-color: #eb6a14 transparent;
+  border-style: solid solid none;
+  border-width: 30px 92px 0;
+  bottom: -30px;
+  content: "";
+  display: inline-block;
+  height: 0;
+  left: 50%;
+  margin-left: -90px;
+  position: absolute;
+  width: 0;
+}
+/* line 117, ../sass/livescore.scss */
+.match .match-title {
+  font-family: oregon;
+  font-size: 1.28571em;
+  line-height: 26px;
+  text-align: center;
+  padding: 10px 0;
+}
+/* line 123, ../sass/livescore.scss */
+.match .match-title a {
+  color: #121212;
+}
+/* line 126, ../sass/livescore.scss */
+.match .match-title a:hover {
+  color: #eb6a14;
+}
+/* line 130, ../sass/livescore.scss */
+.match .match-changed {
+  border-bottom: 1px solid #dedede;
+  border-top: 1px solid #dedede;
+  margin-bottom: 15px;
+  font-size: 12px;
+  line-height: 17px;
+}
+/* line 136, ../sass/livescore.scss */
+.match .match-changed span {
+  display: inline-block;
+  max-width: 50px;
+}
+/* line 141, ../sass/livescore.scss */
+.match .match-body {
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+/* line 145, ../sass/livescore.scss */
+.match .match-item:not(:first-child) {
+  border-top: 1px solid #dedede;
+  margin-top: 40px;
+}

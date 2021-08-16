@@ -1,0 +1,875 @@
+//1200
+// 1024
+// 991
+// 768
+// 575
+// 481
+@media (max-width: 1199px) {
+  #slideshow {
+    .slideshow-caption {
+      width: 45% !important;
+    }
+  }
+  .trending,
+  .match {
+    padding: 0 15px 15px !important;
+    h2 {
+      font-size: 20px !important;
+      margin-bottom: 50px !important;
+      span {
+        padding: 15px 15px 0 !important;
+      }
+    }
+    h2::before {
+      border-width: 30px 82px 0 !important;
+      margin-left: -82px !important;
+    }
+  }
+
+  #main {
+    .updated {
+      .updated-item:first-child,
+      .updated-item:nth-child(2),
+      .updated-item:nth-child(3) {
+        .updated-item-title {
+          min-height: 96px !important;
+        }
+      }
+    }
+    // .sidebar-second {
+    //   // .trending {
+    //   //   padding: 0 15px 15px !important;
+    //   //   h2 {
+    //   //     font-size: 20px;
+    //   //     margin-bottom: 50px;
+    //   //   }
+    //   //   h2::before {
+    //   //     border-width: 30px 82px 0;
+    //   //     margin-left: -82px;
+    //   //     span {
+    //   //       padding: 15px 15px 0;
+    //   //     }
+    //   //   }
+    //   // }
+    // }
+  }
+  #panel-third {
+    .highlight-news-content {
+      width: 40% !important;
+      padding: 25px !important;
+      .highlight-news-title {
+        font-size: 17px !important;
+      }
+      .highlight-news-changed {
+        font-size: 12px !important;
+      }
+      .highlight-news-body {
+        font-size: 12px !important;
+      }
+    }
+    .highlight-news-options {
+      .highlight-news-list {
+        .item {
+          height: 55px !important;
+        }
+      }
+    }
+  }
+  #panel-fourth {
+    .content {
+      .video-title {
+        min-height: 70px;
+      }
+    }
+  }
+
+  #footer {
+    .region-footer {
+      flex-direction: column;
+      align-items: center;
+    }
+    .copyright {
+      max-width: 100%;
+      text-align: center;
+    }
+    .menu-footer {
+      max-width: 100%;
+      text-align: center;
+      // margin-top: 15px;
+      ul {
+        float: none;
+      }
+    }
+    a,
+    p {
+      font-size: 13px !important;
+    }
+  }
+
+  // BLOGS
+  .block-quote blockquote {
+    font-size: 30px !important;
+  }
+  .block-quote blockquote::before,
+  .block-quote blockquote::after {
+    font-size: 15px !important;
+  }
+
+  // VIDEO
+  #video {
+    .content {
+      .video-title {
+        min-height: 70px;
+      }
+    }
+  }
+}
+@media (max-width: 1024px) {
+  #header {
+    .header-wrapper {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .menubar-block {
+      padding: 20px 0 30px;
+      max-width: 100%;
+      justify-content: space-between;
+    }
+    .iconbar-wrapper {
+      margin-right: 15px;
+    }
+  }
+  #main {
+    .sidebar-second {
+      .trending {
+        padding: 0 15px 15px;
+        h2 {
+          font-size: 20px;
+          margin-bottom: 50px;
+        }
+        h2::before {
+          border-width: 30px 82px 0;
+          margin-left: -82px;
+        }
+      }
+    }
+  }
+  #panel-third {
+    .highlight-news-content {
+      width: 45% !important;
+    }
+    .highlight-news-options {
+      .highlight-news-list {
+        .item {
+          height: 55px !important;
+        }
+      }
+    }
+  }
+  #footer {
+    .region-footer {
+      flex-direction: column;
+      align-items: center;
+    }
+    .copyright {
+      max-width: 100%;
+      text-align: center;
+    }
+    .menu-footer {
+      max-width: 100%;
+      text-align: center;
+      // margin-top: 20px;
+      ul {
+        float: none;
+      }
+    }
+    a,
+    p {
+      font-size: 13px !important;
+    }
+  }
+
+  // LIVESCORE
+  #livescore {
+    .side-second {
+      margin-top: 60px;
+    }
+    .match {
+      h2 {
+        span {
+          padding-bottom: 15px !important;
+        }
+      }
+      h2::before {
+        border-width: 30px 146px 0 !important;
+        margin-left: -146px !important;
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  #header {
+    .header-wrapper {
+      flex-direction: row;
+      padding: 10px 15px;
+    }
+    .primary-menu {
+      display: none;
+    }
+    .menubar-block {
+      justify-content: flex-end;
+    }
+    .header-menuicon {
+      display: flex !important;
+      order: 3;
+    }
+    .header-search {
+      order: 1;
+    }
+    .header-login {
+      order: 2;
+      margin-right: 0;
+    }
+  }
+  #sports-menu {
+    position: relative;
+    .container {
+      background: #eb6a14;
+    }
+    .sports-menu {
+      justify-content: flex-end;
+      margin: 0;
+    }
+    .sports-menu-list {
+      display: none !important;
+    }
+    .sports-menu-toggle {
+      display: block !important;
+      border: none;
+      border-radius: 0;
+      color: #fff;
+      margin: 0 15px;
+      padding: 4px;
+      line-height: 2;
+      text-align: center;
+      display: block;
+    }
+  }
+  #slideshow {
+    .slideshow-caption {
+      width: 65% !important;
+    }
+  }
+  #main {
+    .region-main {
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+    }
+    .sidebar-second {
+      .trending {
+        h2::before {
+          border-width: 30px 146px 0;
+          margin-left: -146px;
+        }
+        span {
+          padding-bottom: 15px;
+        }
+      }
+    }
+  }
+  #panel-third {
+    .highlight-news-show {
+      .highlight-news-content {
+        width: 40% !important;
+        .highlight-news-title {
+          font-size: 1em !important;
+        }
+        .highlight-news-body {
+          display: none !important;
+        }
+      }
+    }
+    .highlight-news-options {
+      .highlight-news-list {
+        .item {
+          height: 40px !important;
+        }
+      }
+    }
+  }
+  #panel-fourth {
+    .video-item {
+      .video a::before {
+        border-radius: 6px;
+        width: 40px;
+        height: 25px;
+
+        font-size: 1em;
+        line-height: 1.6;
+        margin-left: -20px;
+        margin-top: -15px;
+      }
+      .video-title {
+        display: none !important;
+      }
+    }
+  }
+  #panel-fifth {
+    .region {
+      h2 {
+        font-size: 17px !important;
+        line-height: 20px !important;
+      }
+    }
+  }
+
+  // BET/ODDS
+  .match {
+    h2 {
+      span {
+        padding-bottom: 15px !important;
+      }
+    }
+    h2::before {
+      border-width: 30px 146px 0 !important;
+      margin-left: -146px !important;
+    }
+  }
+
+  // VIDEO
+  #video {
+    .region-video {
+      .content {
+        .video-item {
+          .video a::before {
+            border-radius: 6px;
+            width: 40px;
+            height: 25px;
+
+            font-size: 1em;
+            line-height: 1.6;
+            margin-left: -20px;
+            margin-top: -15px;
+          }
+          .video-title {
+            display: none !important;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .changeSkin {
+    display: none;
+  }
+  #slideshow {
+    .slideshow-caption {
+      font-size: 1.71429em;
+      width: 55% !important;
+    }
+    .control-prev-icon,
+    .control-next-icon {
+      height: 40px;
+      width: 40px;
+    }
+  }
+  #main {
+    .sidebar-second {
+      margin-top: 30px;
+    }
+  }
+  #panel-fifth {
+    .container {
+      padding-left: 15px;
+      padding-right: 15px;
+      padding-bottom: 5px;
+    }
+  }
+  #footer {
+    .row {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+
+  // BET/ODDS
+  .odds-side-third {
+    margin-top: 30px;
+  }
+}
+@media (max-width: 750px) {
+  #main {
+    .sidebar-second {
+      .trending {
+        h2::before {
+          border-width: 30px 118px 0;
+          margin-left: -118px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 576px) {
+  #header {
+    .header-wrapper {
+      justify-content: space-between;
+    }
+    .header-logo-block {
+      width: auto !important;
+    }
+    .menubar-block {
+      width: auto !important;
+    }
+  }
+  #main {
+    .updated-item {
+      width: 50%;
+    }
+    .main-side-first {
+      width: 50%;
+    }
+    .main-side-second {
+      width: 50%;
+    }
+  }
+  #panel-third {
+    .highlight-news-content {
+      padding: 15px !important;
+      .highlight-news-changed {
+        font-size: 10px !important;
+      }
+      .highlight-news-viewfull a {
+        font-size: 10px !important;
+      }
+    }
+    .highlight-news-options {
+      .highlight-news-list {
+        .item {
+          height: 25px !important;
+        }
+        button.slick-prev,
+        button.slick-next {
+          height: 20px !important;
+          width: 20px !important;
+        }
+      }
+    }
+  }
+  #panel-fourth {
+    .video-item {
+      width: 25% !important;
+    }
+  }
+  #panel-fifth {
+    .container {
+      padding-left: 15px !important;
+    }
+  }
+  #footer {
+    .copyright {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+  //   Blog
+  #blogs {
+    .sidebar-first {
+      width: 50% !important;
+    }
+    .sidebar-second {
+      width: 50% !important;
+    }
+  }
+
+  // GALLERY
+  #gallery {
+    .content {
+      .gallery-header {
+        font-size: 1.14286em !important;
+      }
+    }
+    .gallery-content-item {
+      width: 25%;
+    }
+  }
+
+  // VIDEO
+  #video {
+    .region-video {
+      .content {
+        .video-item {
+          width: 25% !important;
+        }
+      }
+    }
+  }
+
+  // BET/ODDS
+  .odds-side-first {
+    width: 100%;
+  }
+  .odds-side-second,
+  .odds-side-third {
+    width: 50%;
+  }
+  .match {
+    h2::before {
+      border-width: 30px 100px 0 !important;
+      margin-left: -100px !important;
+    }
+  }
+
+  // LIVESCORE
+  #livescore {
+    .side-second {
+      width: 50%;
+      .match {
+        h2::before {
+          border-width: 30px 100px 0 !important;
+          margin-left: -100px !important;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 481px) {
+  #header {
+    .header-wrapper {
+      flex-direction: column;
+      padding: 10px 0 0;
+      margin-bottom: -10px;
+    }
+    .header-logo-block {
+      width: 100% !important;
+      text-align: center;
+      padding-top: 5px;
+    }
+    .menubar-block {
+      padding-top: 10px;
+      width: 100% !important;
+
+      justify-content: center;
+      .iconbar-wrapper {
+        margin-right: 0;
+      }
+    }
+    .header-menuicon {
+      display: flex !important;
+      order: 1;
+    }
+    .header-search {
+      order: 3;
+      margin-left: 10px;
+    }
+    .header-login {
+      order: 2;
+    }
+  }
+  #main {
+    .container {
+      padding-left: 15px !important;
+      padding-right: 15px !important;
+    }
+    .main-side-first {
+      width: 100% !important;
+    }
+    .main-side-second {
+      width: 100% !important;
+    }
+    .sidebar-second {
+      .trending {
+        h2::before {
+          border-width: 30px 200px 0;
+          margin-left: -200px;
+        }
+      }
+    }
+  }
+  #panel-first {
+    .region-panel-first {
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+    }
+  }
+  #panel-second {
+    .region-panel-second {
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+    }
+  }
+  #panel-third {
+    .region-panel-third {
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+    }
+  }
+  #panel-fourth {
+    .region-panel-fourth {
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+    }
+  }
+  #panel-third {
+    .highlight-news-show {
+      .highlight-news-content {
+        display: none !important;
+      }
+    }
+    .highlight-news-options {
+      display: none !important;
+    }
+  }
+
+  //   Blogs
+  #blogs {
+    .sidebar-first {
+      width: 100% !important;
+    }
+    .sidebar-second {
+      width: 100% !important;
+    }
+  }
+
+  // CONTACT
+  #contact {
+    .container {
+      padding-left: 15px !important;
+      padding-right: 15px !important;
+    }
+    .region-contact {
+      .title {
+        h1 {
+          font-size: 26px;
+        }
+      }
+    }
+  }
+
+  // GALLERY
+  #gallery {
+    .container {
+      padding-left: 15px !important;
+      padding-right: 15px !important;
+    }
+    .title h1 {
+      font-size: 1.85714em !important;
+    }
+    .content {
+      .gallery-content {
+        margin-left: 8px;
+        margin-right: 7px;
+        .gallery-content-item {
+          padding-left: 8px;
+          padding-right: 7px;
+          .title {
+            span {
+              font-size: 1em;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // VIDEO
+  #video {
+    .container {
+      padding-left: 15px !important;
+      padding-right: 15px !important;
+      padding-bottom: 15px !important;
+    }
+    .region-video {
+      .title h1 {
+        font-size: 26px !important;
+      }
+      .content {
+        .row {
+          margin-left: -8px !important;
+          margin-right: -7px !important;
+        }
+        .video-item {
+          padding-left: 8px !important;
+          padding-right: 7px !important;
+          margin-bottom: 15px !important;
+        }
+      }
+    }
+  }
+
+  // BET/ODDS
+  #bet-odds {
+    .container {
+      padding-left: 15px !important;
+      padding-right: 15px !important;
+    }
+  }
+  .match {
+    h2::before {
+      border-width: 30px 200px 0 !important;
+      margin-left: -200px !important;
+    }
+  }
+  .odds-side-second,
+  .odds-side-third {
+    width: 100%;
+  }
+  // LIVESCORE
+  #livescore {
+    .container {
+      padding-left: 15px !important;
+      padding-right: 15px !important;
+    }
+    .region-livescore-title {
+      h1 {
+        font-size: 26px;
+      }
+    }
+    .side-second {
+      margin-top: 50px;
+      width: 100%;
+      .match {
+        h2::before {
+          border-width: 30px 200px 0 !important;
+          margin-left: -200px !important;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 375px) {
+  #slideshow {
+    .slideshow-caption {
+      display: none !important;
+    }
+  }
+  #main {
+    .region-main {
+      .content-title {
+        a {
+          font-size: 18px !important;
+        }
+      }
+      .updated {
+        .updated-item {
+          width: 100% !important;
+          .updated-item-title {
+            min-height: auto !important;
+          }
+        }
+      }
+    }
+    .sidebar-second {
+      .trending {
+        h2::before {
+          border-width: 30px 140px 0;
+          margin-left: -140px;
+        }
+      }
+    }
+  }
+  #panel-fourth {
+    .video-item {
+      width: 50% !important;
+    }
+  }
+
+  // GALLERY
+  #gallery {
+    .gallery-content-item {
+      width: 50% !important;
+      .title {
+        height: 36px;
+      }
+    }
+  }
+
+  // VIDEO
+  #video {
+    .region-video {
+      .content {
+        .video-item {
+          width: 50% !important;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 360px) {
+  #contact {
+    .region-contact {
+      .title {
+        h1 {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+
+  // GALLERY
+  #gallery {
+    .title h1 {
+      font-size: 1.42857em !important;
+    }
+  }
+
+  // BET/ODDS
+  .match {
+    h2::before {
+      border-width: 30px 140px 0 !important;
+      margin-left: -140px !important;
+    }
+  }
+
+  // LIVESCORE
+  #livescore {
+    .region-livescore-title {
+      h1 {
+        font-size: 20px;
+      }
+    }
+    .side-second {
+      .match {
+        h2::before {
+          border-width: 30px 140px 0 !important;
+          margin-left: -140px !important;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 350px) {
+  #main {
+    .sidebar-second {
+      .trending {
+        h2::before {
+          border-width: 30px 120px 0;
+          margin-left: -120px;
+        }
+      }
+    }
+  }
+
+  // BET/ODDS
+  .match {
+    h2::before {
+      border-width: 30px 120px 0 !important;
+      margin-left: -120px !important;
+    }
+  }
+
+  // LIVESCORE
+  #livescore {
+    .side-second {
+      .match {
+        h2::before {
+          border-width: 30px 120px 0 !important;
+          margin-left: -120px !important;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,97 @@
+@font-face {
+  font-family: opensans;
+  src: url(../assets/fonts/opensans-regular-webfont.woff2);
+}
+@font-face {
+  font-family: oregon;
+  src: url(../assets/fonts/oregon_ldo-webfont.woff);
+}
+@font-face {
+  font-family: fontAwesome;
+  src: url(../assets/fonts/fontawesome-webfont.woff2);
+}
+@font-face {
+  font-family: titillium;
+  src: url(../assets/fonts/titillium-regular-webfont.woff);
+}
+@font-face {
+  font-family: rotobo;
+  src: url(../assets/fonts/rotobo_font.woff2);
+}
+/* line 3, ../sass/video.scss */
+#video {
+  position: relative;
+}
+/* line 6, ../sass/video.scss */
+#video .container {
+  background: #fff;
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+/* line 15, ../sass/video.scss */
+#video .region-video .title h1 {
+  font-family: titillium;
+  font-weight: 400;
+  line-height: 1.2;
+  margin: 0 0 30px;
+  font-size: 36px;
+}
+/* line 24, ../sass/video.scss */
+#video .region-video .content .video-item {
+  margin-bottom: 30px;
+}
+/* line 28, ../sass/video.scss */
+#video .region-video .content .video-item:hover .video a::before {
+  opacity: 0;
+}
+/* line 32, ../sass/video.scss */
+#video .region-video .content .video-item:hover .video-title {
+  opacity: 0;
+}
+/* line 38, ../sass/video.scss */
+#video .region-video .content .video a::before {
+  content: "\f04b";
+  background: #dd453a;
+  color: #fff;
+  border-radius: 8px;
+  display: inline-block;
+  font-family: fontawesome;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.21429em;
+  height: 35px;
+  width: 50px;
+  text-align: center;
+  line-height: 2;
+  margin-left: -25px;
+  margin-top: -17px;
+  padding-left: 5px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 2;
+}
+/* line 65, ../sass/video.scss */
+#video .region-video .content .video-title {
+  background-color: #000;
+  margin-bottom: 0;
+  padding: 15px;
+  position: absolute;
+  bottom: 0;
+  left: 15px;
+  right: 15px;
+  min-height: 70px;
+  line-height: 18px;
+  transition: all 0.3s ease;
+  z-index: 1;
+}
+/* line 78, ../sass/video.scss */
+#video .region-video .content .video-title a {
+  color: #fff;
+  font-family: oregon;
+}
+/* line 83, ../sass/video.scss */
+#video .region-video .content .video-title:hover {
+  background-color: #eb6a14;
+}

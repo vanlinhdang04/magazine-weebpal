@@ -1,0 +1,165 @@
+@font-face {
+  font-family: opensans;
+  src: url(../assets/fonts/opensans-regular-webfont.woff2);
+}
+@font-face {
+  font-family: oregon;
+  src: url(../assets/fonts/oregon_ldo-webfont.woff);
+}
+@font-face {
+  font-family: fontAwesome;
+  src: url(../assets/fonts/fontawesome-webfont.woff2);
+}
+@font-face {
+  font-family: titillium;
+  src: url(../assets/fonts/titillium-regular-webfont.woff);
+}
+@font-face {
+  font-family: rotobo;
+  src: url(../assets/fonts/rotobo_font.woff2);
+}
+/* line 2, ../sass/gallery.scss */
+#gallery {
+  position: relative;
+}
+/* line 5, ../sass/gallery.scss */
+#gallery .container {
+  background: #fff;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+/* line 12, ../sass/gallery.scss */
+#gallery .region-gallery {
+  padding-bottom: 20px;
+}
+/* line 16, ../sass/gallery.scss */
+#gallery .title h1 {
+  font-family: titillium;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.2;
+  margin: 0 0 30px;
+}
+/* line 24, ../sass/gallery.scss */
+#gallery .content {
+  font-family: oregon;
+}
+/* line 26, ../sass/gallery.scss */
+#gallery .content .gallery-header {
+  color: #121212;
+  font-size: 2.14286em;
+  line-height: 1.3;
+  margin-bottom: 30px;
+  text-align: center;
+}
+/* line 33, ../sass/gallery.scss */
+#gallery .content .gallery-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+/* line 38, ../sass/gallery.scss */
+#gallery .content .gallery-content-item .image {
+  margin-bottom: 10px;
+}
+/* line 41, ../sass/gallery.scss */
+#gallery .content .gallery-content-item .image img {
+  vertical-align: middle;
+  height: 100%;
+}
+/* line 45, ../sass/gallery.scss */
+#gallery .content .gallery-content-item .image a {
+  position: relative;
+}
+/* line 48, ../sass/gallery.scss */
+#gallery .content .gallery-content-item .image a::before {
+  background-color: #eb6a14;
+  content: "\f03e";
+  font-size: 1.07143em;
+  display: inline-block;
+  font-family: fontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  color: #fff;
+  line-height: 2.4;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50px;
+  height: 35px;
+  border-radius: 8px;
+  text-align: center;
+  z-index: 2;
+}
+/* line 73, ../sass/gallery.scss */
+#gallery .content .gallery-content-item .image:hover a::before {
+  opacity: 1;
+}
+/* line 77, ../sass/gallery.scss */
+#gallery .content .gallery-content-item .title {
+  margin-bottom: 10px;
+}
+/* line 79, ../sass/gallery.scss */
+#gallery .content .gallery-content-item .title span {
+  font-size: 1.14286em;
+  line-height: 1.2;
+}
+/* line 82, ../sass/gallery.scss */
+#gallery .content .gallery-content-item .title span a {
+  color: #121212;
+  outline: none;
+}
+/* line 86, ../sass/gallery.scss */
+#gallery .content .gallery-content-item .title span a:hover {
+  color: #eb6a14;
+}
+/* line 92, ../sass/gallery.scss */
+#gallery .content .pager {
+  border-top: 1px solid #dedede;
+  font-size: 0.92857em;
+  margin: 15px 15px 10px 15px;
+  padding-top: 25px;
+  text-align: right;
+  width: 100%;
+}
+/* line 100, ../sass/gallery.scss */
+#gallery .content .pager-items {
+  display: block;
+  padding-left: 0;
+}
+/* line 104, ../sass/gallery.scss */
+#gallery .content .pager-items .pager-item {
+  display: inline-block;
+  font-family: "Open Sans";
+  margin-bottom: 10px;
+  margin-left: 0;
+  padding: 0;
+  text-align: center;
+}
+/* line 111, ../sass/gallery.scss */
+#gallery .content .pager-items .pager-item a {
+  border: 1px solid #ddd;
+  background-color: #fff;
+  border-color: #e4dfdf;
+  border-radius: 0;
+  color: #333333;
+  padding: 3px 10px;
+}
+/* line 119, ../sass/gallery.scss */
+#gallery .content .pager-items .pager-item a:hover {
+  border: 1px solid #2caaa6;
+  color: #2caaa6;
+}
+/* line 124, ../sass/gallery.scss */
+#gallery .content .pager-items .active {
+  font-weight: bold;
+}
+/* line 126, ../sass/gallery.scss */
+#gallery .content .pager-items .active a {
+  border: 1px solid #2caaa6;
+  color: #2caaa6;
+}

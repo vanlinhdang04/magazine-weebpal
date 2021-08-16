@@ -1,0 +1,26 @@
+$openSans: url(../assets/fonts/opensans-regular-webfont.woff2);
+$oregon: url(../assets/fonts/oregon_ldo-webfont.woff);
+$fontAwesome: url(../assets/fonts/fontawesome-webfont.woff2);
+$titillium: url(../assets/fonts/titillium-regular-webfont.woff);
+$rotobo: url(../assets/fonts/rotobo_font.woff2);
+// fonts
+@font-face {
+  font-family: opensans;
+  src: $openSans;
+}
+@font-face {
+  font-family: oregon;
+  src: $oregon;
+}
+@font-face {
+  font-family: fontAwesome;
+  src: $fontAwesome;
+}
+@font-face {
+  font-family: titillium;
+  src: $titillium;
+}
+@font-face {
+  font-family: rotobo;
+  src: $rotobo;
+}

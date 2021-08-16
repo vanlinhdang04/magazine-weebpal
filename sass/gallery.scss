@@ -1,0 +1,133 @@
+@import "fonts";
+#gallery {
+  position: relative;
+  // z-index: 10;
+  .container {
+    background: #fff;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .region-gallery {
+    padding-bottom: 20px;
+  }
+  .title {
+    h1 {
+      font-family: titillium;
+      font-weight: 400;
+      font-size: 36px;
+      line-height: 1.2;
+      margin: 0 0 30px;
+    }
+  }
+  .content {
+    font-family: oregon;
+    .gallery-header {
+      color: #121212;
+      font-size: 2.14286em;
+      line-height: 1.3;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+    .gallery-content {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .gallery-content-item {
+      .image {
+        margin-bottom: 10px;
+
+        img {
+          vertical-align: middle;
+          height: 100%;
+        }
+        a {
+          position: relative;
+        }
+        a::before {
+          background-color: #eb6a14;
+          content: "\f03e";
+          font-size: 1.07143em;
+          display: inline-block;
+          font-family: fontAwesome;
+          font-style: normal;
+          font-weight: normal;
+          line-height: 1;
+          color: #fff;
+          line-height: 2.4;
+          transform: translate(-50%, -50%);
+          opacity: 0;
+
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          width: 50px;
+          height: 35px;
+          border-radius: 8px;
+          text-align: center;
+          z-index: 2;
+        }
+      }
+      .image:hover {
+        a::before {
+          opacity: 1;
+        }
+      }
+      .title {
+        margin-bottom: 10px;
+        span {
+          font-size: 1.14286em;
+          line-height: 1.2;
+          a {
+            color: #121212;
+            outline: none;
+          }
+          a:hover {
+            color: #eb6a14;
+          }
+        }
+      }
+    }
+    .pager {
+      border-top: 1px solid #dedede;
+      font-size: 0.92857em;
+      margin: 15px 15px 10px 15px;
+      padding-top: 25px;
+      text-align: right;
+      width: 100%;
+    }
+    .pager-items {
+      display: block;
+      padding-left: 0;
+      //   text-align: right;
+      .pager-item {
+        display: inline-block;
+        font-family: "Open Sans";
+        margin-bottom: 10px;
+        margin-left: 0;
+        padding: 0;
+        text-align: center;
+        a {
+          border: 1px solid #ddd;
+          background-color: #fff;
+          border-color: #e4dfdf;
+          border-radius: 0;
+          color: #333333;
+          padding: 3px 10px;
+        }
+        a:hover {
+          border: 1px solid #2caaa6;
+          color: #2caaa6;
+        }
+      }
+      .active {
+        font-weight: bold;
+        a {
+          border: 1px solid #2caaa6;
+          color: #2caaa6;
+        }
+      }
+    }
+  }
+}
