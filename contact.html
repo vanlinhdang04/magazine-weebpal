@@ -35,7 +35,7 @@
                 </div>
                 <div class="layout">
                     <strong>Layout Boxed</strong>
-                    <label for="">
+                    <label>
                         <span class="active">No</span>
                         <span>Yes</span>
                     </label>
@@ -61,7 +61,7 @@
                     <div class="col-lg-3 col-md-5 col-sm-6 header-logo-block">
                         <div class="header-logo">
                             <a href="index.html">
-                                <img src="./assets/images/logo.svg" alt="" class="header-logo-img img-fluid">
+                                <img src="./assets/images/logo.svg" alt="logo" class="header-logo-img img-fluid">
                             </a>
                         </div>
                     </div>
@@ -76,7 +76,7 @@
                             <li class="primary-menu-item"><a href="livescore.html">LIVESCORE</a></li>
                         </ul>
                         <!-- MENU MOBILE -->
-                        <nav class="menu-mobile" scroll="no">
+                        <nav class="menu-mobile">
                             <div class="container-fluid">
                                 <ul class="menu-mobile-list">
                                     <li class="menu-mobile-item">
@@ -118,7 +118,7 @@
                             </div>
                             <div class="header-search d-flex justify-content-center align-items-center">
                                 <form class="search" action="blogs.html">
-                                    <label for="serch-input">
+                                    <label for="search-input">
                                         <input class=" search-input" id="search-input" type="text" placeholder="Keywords">
                                     </label>
                                     <label for="search-submit" class="submit-block">
@@ -164,9 +164,9 @@
                 </nav>
             </div>
         </header>
-        <!-- --- -->
         <!-- SECTION SPORTS MENU -->
         <section id="sports-menu">
+            <h2 style="display:none;">Sports menu</h2>
             <div class="container">
                 <nav class="sports-menu row">
                     <a class=sports-menu-toggle href="#" onclick="openSportsMenu()">
@@ -361,10 +361,11 @@
         </section>
         <!-- SECTION BANNER -->
         <section id="banner">
+            <h2 style="display:none;">Banner</h2>
             <div class="container">
                 <div class="region-banner">
                     <div class="row">
-                        <img src="./assets/images/contact/banner.jpg" class="img-fluid" alt="">
+                        <img src="./assets/images/contact/banner.jpg" class="img-fluid" alt="banner">
                     </div>
                 </div>
             </div>
@@ -413,25 +414,25 @@
                             </div>
                             <div class="contact-input">
                                 <div class="content">
-                                    <form action="">
+                                    <form action="#">
                                         <div class="name">
                                             <label class="label-required" for="yourname">Your name</label>
-                                            <input type="text" class="yourname form-control" name="name" size="60" maxlength="255">
+                                            <input id="yourname" type="text" class="yourname form-control" name="name" size="60" maxlength="255">
                                         </div>
                                         <div class="email">
                                             <label class="label-required" for="youremail">Your email address</label>
-                                            <input type="text" class="youremail form-control" name="name" size="60" maxlength="255">
+                                            <input id="youremail" type="text" class="youremail form-control" name="name" size="60" maxlength="255">
                                         </div>
                                         <div class="subject">
                                             <label class="label-required" for="subject-content">Subject</label>
-                                            <input type="text" class="subject-content form-control" name="name" size="60" maxlength="255">
+                                            <input id="subject-content" type="text" class="subject-content form-control" name="name" size="60" maxlength="255">
                                         </div>
                                         <div class="message">
                                             <label class="label-required" for="message-content">Message</label>
-                                            <textarea name="message" id="message-content" class="message-content form-control" cols="60" rows="10"></textarea>
+                                            <textarea id="message-content" name="message" class="message-content form-control" cols="60" rows="10"></textarea>
                                         </div>
                                         <div class="btn-action ">
-                                            <input class="btn btn-send btn-style"type="submit" id="contact-submit" value="Send Message">
+                                            <input class="btn btn-send btn-style" type="submit" id="contact-submit" value="Send Message">
                                             <input class="btn btn-preview btn-style" type="submit" id="contact-preview" value="Preview">
                                         </div>
                                     </form>
@@ -443,7 +444,6 @@
                 </div>
             </div>
         </section>
-        <!-- --- -->
         <section id="panel-fifth">
             <div class="container">
                 <div class="region-panel-fifth row">
@@ -606,7 +606,7 @@
                                         <a class="fa fa-facebook" href="#">
                                             <span>Facebook</span>
                                         </a>
-                                        </i>
+                                    </li>
                                     <li>
                                         <a class="fa fa-twitter" href="#">
                                             <span>Twitter</span>
