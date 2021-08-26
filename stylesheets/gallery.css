@@ -21,6 +21,7 @@
 /* line 2, ../sass/gallery.scss */
 #gallery {
   position: relative;
+  z-index: 1;
 }
 /* line 5, ../sass/gallery.scss */
 #gallery .container {

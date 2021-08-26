@@ -21,6 +21,7 @@
 /* line 2, ../sass/contact.scss */
 #contact {
   position: relative;
+  z-index: 1;
 }
 /* line 5, ../sass/contact.scss */
 #contact .container {

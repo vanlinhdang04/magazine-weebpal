@@ -1670,7 +1670,6 @@ nav.menu-mobile .active a {
 
 /* line 1492, ../sass/screen.scss */
 #panel-fifth {
-  z-index: -1 !important;
   background-color: #121212;
   border-top: 10px solid #eb6a14;
   font-size: 0.92857em;

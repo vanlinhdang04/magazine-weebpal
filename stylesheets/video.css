@@ -21,6 +21,7 @@
 /* line 3, ../sass/video.scss */
 #video {
   position: relative;
+  z-index: 1;
 }
 /* line 6, ../sass/video.scss */
 #video .container {
